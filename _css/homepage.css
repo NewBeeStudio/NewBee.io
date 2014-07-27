@@ -1,4 +1,3 @@
-/* reset */
 div,h1,p,a,i{
 	margin: 0;
 	padding: 0;
@@ -11,6 +10,7 @@ html , body{
 	line-height: 1;
 	background-color: #334873;
 	background-image: url(../_images/bg_white.png);
+	background-attachment:fixed;
 }
 
 
@@ -62,12 +62,13 @@ padding-top:5px;
 }
 
 .main p{
-	font-size: 18px;
+	font-size: 20px;
 	color: #6F6E6E;
 	font-family: 'ColaborateLightRegular', Arial, sans-serif;
-	line-height: 125%;
-	margin-bottom: 10px;
-	min-height:300px;
+	line-height: 145%;
+	margin-bottom: 25px;
+	min-height:100px;
+
 }
 
 
@@ -141,10 +142,11 @@ overflow: hidden;
 	list-style:none;
 	float:left;
 	font-size:14px;
+
 }
 #navMenu li a
 {
-	color:#fff!important;
+	color:#fff;
 	text-decoration:none;
 	width:91px;
 	height:40px;
@@ -153,8 +155,17 @@ overflow: hidden;
 	background-image:url('../_images/navbg.png');
 	display:block;
 }
-#navMenu li a.last
-{width:92px;}
+#navMenu li.last
+{
+	float:right;
+	padding-right:10px;
+}
+#navMenu li.last a
+{
+	background-image:url('../_images');
+	
+}
+/*
 #navMenu li a.current
 {	
 	background-position:0 -80px;
@@ -165,6 +176,9 @@ overflow: hidden;
 	display:block;
 	color:#fff;
 }
+*/
 #navMenu li a:hover
-{background-position:0 -40px;}
+{	background-image:url('../_images/navbg.png');
+	background-position:0 -40px;
+}
 
