@@ -1,0 +1,126 @@
+﻿.navbar{
+	margin-bottom: 0;
+	font-family: Microsoft YaHei;
+}
+#myCarousel{
+	margin-bottom: 10px;
+	border-style: inset;
+	border-color: #c9ddfd;
+	border-width: 3px;
+
+}
+#outside_slider{
+	margin-top: 5%;
+	margin-bottom: 6%;
+	padding: 10px;
+	background-color: #EBF5FF;
+	border-width: 3px;
+	border-color: #c9ddfd;
+	border-style: outset;
+	border-radius: 5px;
+}
+#main_up{
+	background: url(../pic/bgimg1.jpg);
+}
+#outside_pager{
+	margin-top: 15%;
+	min-height: 30%;
+}
+#page_newbee{
+	font-size: 400%;
+	font-family: Microsoft YaHei;
+	color: #eee;
+	text-shadow: -1px -1px #fff, 1px 1px #333, 0.1em 0.1em 0.15em #333;
+}
+#page_studio{
+	font-size: 400%;
+	font-family: Microsoft YaHei;
+	color: #eee;
+	text-shadow: -1px -1px #fff, 1px 1px #333, 0.1em 0.1em 0.15em #333;
+}
+#en_newbee{
+	font-size: 200%;
+	color: #111;
+	letter-spacing: 2px;
+	text-shadow: 0.1em 0.1em 0.15em #333;
+}
+#open,#innovation,#agile,#unity{
+	font-size: 280%;
+	font-family: Microsoft JhengHei;
+	color: #32c547;
+	text-shadow: 0.1em 0.1em 0.15em #333;
+}
+#open{
+	margin-top: 15%;
+}
+#innovation{
+	color: #c5323d;
+}
+#agile{
+	color: #323dc5;
+}
+#unity{
+	color: #c5c032;
+	margin-bottom: 5%;
+}
+#learn_more{
+	display: none;
+	margin-left: 14%;
+	font-size: 150%;
+	background-color: #497eba;
+	color: #EBF5FF;
+	border-style: outset;
+	border-width: 4px;
+	border-color: #4f8bca;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 8%;
+	padding-right: 8%;
+	text-decoration: none;
+}
+.shake-slow{
+	cursor: default;
+}
+#main_down{
+	background: url(../pic/bgimg3.jpg);
+}
+.down_block{
+	margin-top: 3%;
+	font-size: 120%;
+	margin-bottom: 3%;
+}
+#intro{
+	padding-left:6%;
+	padding-right:3%; 
+}
+#news{
+	padding-left: 3%;
+	padding-right: 3%;
+}
+#join{
+	padding-left: 3%;
+	padding-right: 6%;
+}
+.down_head{
+	cursor: default;
+	font-size: 150%;
+	font-family: Microsoft YaHei;
+}
+.down_content{
+	font-size: 100%;
+	font-family: Microsoft YaHei;
+	background-color: #e2e2e2;
+	padding:20px;
+	background: url(../pic/bgimg4.jpg);
+	border-style: inset;
+	border-width: 1px;
+	border-color: #cdcdbf; 
+	border-radius: 8px; 
+}
+.footer {
+	width: 100%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background-color: #2b5682;
+	color: #acd3fb;
+}

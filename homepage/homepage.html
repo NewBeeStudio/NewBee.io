@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Bee | 点亮创意</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"-->
+  <link rel="stylesheet" type="text/css" href="../common/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../common/animate.css">
+  <link rel="stylesheet" type="text/css" href="../common/csshake.min.css">
+  <link rel="stylesheet" type="text/css" href="css/homepage.css">
+</head>
+<body style='overflow:-Scroll;overflow-x:hidden'>
+  <script type="text/javascript" src="../common/jquery.min.js"></script>
+  <script type="text/javascript" src="../common/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../common/jquery.lettering.js"></script>
+  <script type="text/javascript" src="../common/jquery.textillate.js"></script>
+  <script type="text/javascript" src="js/homepage.js"></script>
+  <!--begin your codes here-->
+  <!--navigation menu-->
+  <nav class="navbar navbar-default navbar-inverse" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type ="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class ="sr-only">Toggle navigation</span>
+          <span class ="icon-bar"></span>
+          <span class ="icon-bar"></span>
+          <span class ="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="homepage.html">NewBee</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="homepage.html">首页</a></li>
+          <li><a href="../about_NB/about_NB.html">关于新蜂</a></li>
+          <li><a href="../project_list/project_list.html">成果展示</a></li>
+          <li><a href="../team_member/team_member.html">成员风采</a></li>
+          <li><a href="../contact_us/contact_us.html">联系我们</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><img src="../common/logo.jpg" width="25px" alt=""></a></li>
+          <li><a href="#"><strong>Log in</strong></a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>   
+
+  <div class="row" id="main_up">
+    <div class="col-xs-2 col-sm-2 col-md-2"></div>
+    <div class="col-xs-3 col-sm-3 col-md-3">
+      <div id="outside_pager">
+          <p><span id="page_newbee" class="shake shake-slow">新蜂</span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="page_studio" class="shake shake-slow">工作室</span></p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em id="en_newbee" class="shake shake-slow">NewBee Studio</em></p>
+          <p class="text-left">&nbsp;&nbsp;<span id="open" class="shake shake-slow">开放</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="innovation" class="shake shake-slow">创新</span></p>
+          <p class="text-center"><span id="agile" class="shake shake-slow">敏捷</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="unity" class="shake shake-slow">团结</span></p>
+          <a class="shake shake-slow" id="learn_more" href="../about_NB/about_NB.html">Learn More</a>
+      </div>
+    </div>
+    <div class="col-xs-5 col-sm-5 col-md-5"> 
+      <div id="outside_slider"> 
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>   
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <a href="#"><img src="pic/slide1.jpg" alt="First slide"></a>
+            <div class="carousel-caption"></div>
+          </div>
+          <div class="item">
+           <a href="#"><img src="pic/slide2.jpg" alt="Second slide"></a>
+           <div class="carousel-caption"></div>
+         </div>
+         <div class="item">
+           <a href="#"><img src="pic/slide3.jpg" alt="Third slide"></a>
+           <div class="carousel-caption"></div>
+         </div>
+         <div class="item">
+           <a href="#"><img src="pic/slide4.jpg" alt="Fourth slide"></a>
+           <div class="carousel-caption"></div>
+         </div>
+       </div>
+       <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev">
+         <span class="glyphicon glyphicon-chevron-left"></span>
+         <span class="sr-only">Previous</span>
+       </a>
+       <a class="carousel-control right" href="#myCarousel" role="button" data-slide="next">
+         <span class="glyphicon glyphicon-chevron-right"></span>
+         <span class="sr-only">Next</span>
+       </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-2 col-sm-2 col-md-2"></div>
+  </div>
+
+  <div class="row" id="main_down">
+      <div class="col-xs-4 col-sm-4 col-md-4 down_block" id="intro">
+          <p>&nbsp;&nbsp;<span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;<span class="down_head">工作室简介</span></p>  
+          <div class="down_content">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新蜂工作室是依托于上海交通大学网络信息中心成立的科技创新类学生社团。新蜂不仅仅是一个技术团队，更是一群团结友爱、勇于创新的小蜜蜂。爱学爱思爱创造，爱吃爱玩爱嘚瑟，我们崇尚TED（技术、娱乐和设计）的完美结合。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;社团分为四个部门：策划部进行产品创意和活动策划，培养统筹管理型人才；设计部负责视觉设计和交互体验，成就专业设计师；开发部主管产品的前端和后台开发，缔造IT技术大牛；发展部负责产品运营和社团发展，锻炼市场营销和组织发展的能力。</p>
+          </div>
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4 down_block" id="news">
+          <p>&nbsp;&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;<span class="down_head">最新动态</span></p> 
+          <div class="down_content">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新蜂工作室是依托于上海交通大学网络信息中心成立的科技创新类学生社团。新蜂不仅仅是一个技术团队，更是一群团结友爱、勇于创新的小蜜蜂。爱学爱思爱创造，爱吃爱玩爱嘚瑟，我们崇尚TED（技术、娱乐和设计）的完美结合。</p>
+          </div>
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4 down_block" id="join">
+          <p>&nbsp;&nbsp;<span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;<span class="down_head">加入我们</span></p> 
+          <div class="down_content">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新蜂工作室是依托于上海交通大学网络信息中心成立的科技创新类学生社团。新蜂不仅仅是一个技术团队，更是一群团结友爱、勇于创新的小蜜蜂。爱学爱思爱创造，爱吃爱玩爱嘚瑟，我们崇尚TED（技术、娱乐和设计）的完美结合。</p>
+          </div>
+      </div>
+  </div>
+<!--personal codes end-->
+  <div class="footer">
+    <p class="text-center">Copyright 2014 NewBee Studio. All Rights Reserved.</p>
+  </div>
+</body>
+</html>
