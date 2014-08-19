@@ -1,4 +1,11 @@
-﻿.navbar{
+﻿body{
+	margin: 0;
+	padding: 0;
+	background: url(../pic/img.jpg);
+	background-size: cover;
+}
+.navbar{
+	background-color: #1d1701;
 	margin-bottom: 0;
 	font-family: Microsoft YaHei;
 }
@@ -9,6 +16,6 @@
 	width: 100%;
 	padding-top: 8px;
 	padding-bottom: 8px;
-	background-color: #2b5682;
-	color: #acd3fb;
+	background-color: #1d1701;
+	color: #fcf4e0;
 }

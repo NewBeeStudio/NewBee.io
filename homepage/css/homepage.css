@@ -1,26 +1,37 @@
-﻿.navbar{
+﻿body{
+	margin: 0;
+	padding: 0;
+	background: url(../pic/img.jpg);
+	background-size: cover;
+}
+.navbar{
+	background-color: #1d1701;
 	margin-bottom: 0;
 	font-family: Microsoft YaHei;
+}
+.nav_main{
+	color: #fcf4e0;
+	font-size: 120%;
 }
 #myCarousel{
 	margin-bottom: 10px;
 	border-style: inset;
-	border-color: #c9ddfd;
+	border-color: #ede7cf;
 	border-width: 3px;
 
 }
 #outside_slider{
-	margin-top: 5%;
+	margin-top: 10%;
 	margin-bottom: 6%;
 	padding: 10px;
-	background-color: #EBF5FF;
+	background-color: #f7f3e5;
 	border-width: 3px;
-	border-color: #c9ddfd;
+	border-color: #ede7cf;
 	border-style: outset;
 	border-radius: 5px;
 }
 #main_up{
-	background: url(../pic/bgimg1.jpg);
+	background-size: cover;
 }
 #outside_pager{
 	margin-top: 15%;
@@ -29,18 +40,18 @@
 #page_newbee{
 	font-size: 400%;
 	font-family: Microsoft YaHei;
-	color: #eee;
+	color: #111;
 	text-shadow: -1px -1px #fff, 1px 1px #333, 0.1em 0.1em 0.15em #333;
 }
 #page_studio{
 	font-size: 400%;
 	font-family: Microsoft YaHei;
-	color: #eee;
+	color: #111;
 	text-shadow: -1px -1px #fff, 1px 1px #333, 0.1em 0.1em 0.15em #333;
 }
 #en_newbee{
 	font-size: 200%;
-	color: #111;
+	color: #eee;
 	letter-spacing: 2px;
 	text-shadow: 0.1em 0.1em 0.15em #333;
 }
@@ -54,13 +65,13 @@
 	margin-top: 15%;
 }
 #innovation{
-	color: #c5323d;
-}
-#agile{
 	color: #323dc5;
 }
+#agile{
+	color: #c5323d;
+}
 #unity{
-	color: #c5c032;
+	color: #24baaa;
 	margin-bottom: 5%;
 }
 #learn_more{
@@ -81,11 +92,8 @@
 .shake-slow{
 	cursor: default;
 }
-#main_down{
-	background: url(../pic/bgimg3.jpg);
-}
 .down_block{
-	margin-top: 3%;
+	margin-top: 2%;
 	font-size: 120%;
 	margin-bottom: 3%;
 }
@@ -121,6 +129,6 @@
 	width: 100%;
 	padding-top: 8px;
 	padding-bottom: 8px;
-	background-color: #2b5682;
-	color: #acd3fb;
+	background-color: #1d1701;
+	color: #fcf4e0;
 }
