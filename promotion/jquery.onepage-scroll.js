@@ -112,6 +112,15 @@
     $.fn.moveDown = function() {
       var el = $(this)
       index = $(settings.sectionContainer +".active").data("index");
+      if(index == 1){
+        $('.right_bottom').textillate({
+          initialDelay: 1000,
+          in:{
+            delay: 120,
+            effect: 'bounce'
+          }
+        });
+      }
       current = $(settings.sectionContainer + "[data-index='" + index + "']");
       next = $(settings.sectionContainer + "[data-index='" + (index + 1) + "']");
       if(next.length < 1) {

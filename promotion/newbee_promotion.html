@@ -8,42 +8,132 @@
 	<meta name="author" content="NewBee Studio">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
   <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
-  <link href='promotion.css' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="bootstrap.min.js"></script>
+  <script type="text/javascript" src="jquery.lettering.js"></script>
+  <script type="text/javascript" src="jquery.textillate.js"></script>
+  <script type="text/javascript" src="promotion.js"></script>
+  <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="promotion.css" rel="stylesheet" type="text/css">
+  <link href="animate.css" rel="stylesheet" type="text/css">
+  <link href="csshake.min.css" rel="stylesheet" type="text/css">
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
-  <script>
-	  $(document).ready(function(){
-      $(".main").onepage_scroll({
-        sectionContainer: "section",
-        responsiveFallback: 600,
-        loop: true
-      });
-		});
-	</script>
 </head>
 <body>
   <div class="wrapper">
 	  <div class="main">
       <section class="page1">
         <div class="page_container">
-          <h1>新蜂工作室</h1>
-          <h2>NewBee Studio</h2>
-          <p>开放 创新 敏捷 团结</p>
+          <div class="row">
+            <div class="col-xs-2 col-sm-2 col-md-2"></div>
+            <div class="col-xs-4 col-sm-4 col-md-4">
+              <h1 class="shake shake-slow">新蜂工作室</h1>
+              <h2>New Bee Studio</h2>
+              <p>开放 创新 敏捷 团结</p>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6"></div>
+          </div>
   	    </div>
       </section>
 	    
 	    <section class="page2">
 	      <div class="page_container">
-          <h1>团队介绍</h1>
-          <p>各种介绍</p>
+          <div class="page_container">
+            <div class="row">
+              <div class="col-xs-1 col-sm-1 col-md-1"></div>
+              <div class="col-xs-5 col-sm-5 col-md-5">
+                <div id="page2_11">
+                  <h1><span class="glyphicon glyphicon-home"></span> 我们的工作室</h1>
+                  <ul>
+                    <li>运用最新最炫酷的移动互联网技术</li>
+                    <li>致力于移动互联网及云计算平台的开发和研究</li>
+                    <li>以真实的科研或市场项目为牵引</li>
+                    <li>将移动互联网应用于从生活娱乐到环境保护等各个方面</li>
+                    <li>为校内移动互联网爱好者提供交流、学习、分享和锻炼<br/>自我的平台</li>
+                  </ul>
+                </div>
+                <div id="page2_21">
+                  <h1><span class="glyphicon glyphicon-fire"></span> 这就结束了？不！</h1>
+                  <ul>
+                    <li>更重要的是，我们并不止步于技术</li>
+                    <li>我们爱吃爱玩爱队友</li>
+                    <li>我们爱创新、很勤奋、敢梦想</li>
+                    <li>我们崇尚TED（技术、娱乐和设计）的完美结合</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xs-5 col-sm-5 col-md-5">
+                <div id="page2_12">
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>   
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <a href="#"><img src="pic/zhaoxin.jpg" alt="First slide"></a>
+                        <div class="carousel-caption">2014年夏季招新</div>
+                      </div>
+                      <div class="item">
+                       <a href="#"><img src="pic/pobing.jpg" alt="Second slide"></a>
+                       <div class="carousel-caption">新人破冰活动</div>
+                     </div>
+                     <div class="item">
+                       <a href="#"><img src="pic/workshop.jpg" alt="Third slide"></a>
+                       <div class="carousel-caption">我们的工作室</div>
+                     </div>
+                   </div>
+                   <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev">
+                     <span class="glyphicon glyphicon-chevron-left"></span>
+                     <span class="sr-only">Previous</span>
+                   </a>
+                   <a class="carousel-control right" href="#myCarousel" role="button" data-slide="next">
+                     <span class="glyphicon glyphicon-chevron-right"></span>
+                     <span class="sr-only">Next</span>
+                   </a>
+                 </div>  
+                </div>
+                <div id="page2_22">
+                  <p class="right_bottom">依托于上海交通大学网络信息中心</p>
+                  <p class="right_bottom">我们拥有最新最前端的技术和最好最充足的资源</p>
+                </div>
+              </div>
+              <div class="col-xs-1 col-sm-1 col-md-1"></div>
+            </div>
+          </div>
 	      </div>
       </section>
 	    
 	    <section class="page3">
 	      <div class="page_container">
-          <h1>项目介绍</h1>
-          <p>已经完成的、还在做的、之类之类……</p>
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <span class="glyphicon glyphicon-chevron-left" id="left_pro"></span>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6" id="page3_main">  
+            <div id="wifi">
+              <img src="pic/wifi.jpg" width="90%" id="wifi_img">
+              <h1 id="wifi_h1">校园wifi数据监控分析平台</h1>
+              <p id="wifi_p">实时统计校园各大AP接入人数和数据流量<br/>以表格、折线图和地图等形式可视化展现结果，动态掌握小伙伴们的活动规律。</p>
+            </div>
+            <div id="bus">
+              <img src="pic/bus1.jpg" width="35%" class="bus_img">
+              <img src="pic/bus2.jpg" width="35%" class="bus_img">
+              <h1 id="bus_h1">BusBuddy校车乘坐助手</h1>
+              <p id="bus_p">手指动一动，就可以随时随地实时查询校车位置及车载人数<br/>
+                荣获上海交通大学第一届“华为杯”一等奖。</p>
+            </div>
+            <div id="hack">
+              <img src="pic/hack.jpg" width="90%" id="hack_img">
+              <h1 id="hack_h1">Hackathon黑客马拉松</h1>
+              <p id="hack_p">将于本学期举办第一届“黑客马拉松”活动，以“空气监测”为主题<br/>致力于打造一个开放的创新平台，发现你我身边勇于创新敢于动手的小伙伴<br/>
+              Sponsored by Omnilab & GitCafe</p>
+            </div>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <span class="glyphicon glyphicon-chevron-right" id="right_pro"></span>
+          </div>
   	    </div>
       </section>
 
