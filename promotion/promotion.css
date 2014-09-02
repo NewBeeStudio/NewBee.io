@@ -100,7 +100,7 @@ html {
 body {
   background: #E2E4E7;
   padding: 0;
-  font-family: 'open sans', Microsoft Yahei;
+  font-family: Arial, Microsoft Yahei;
   position: relative;
   margin: 0;
   height: 100%;
@@ -134,7 +134,7 @@ body {
   font-size: 150%;
 }
 .page2{
-  background-color: #12b2fc;
+  background: url(pic/page2.jpg);
   color: #ecf8f2;
 }
 .page2 h1{
@@ -163,7 +163,7 @@ body {
   border-radius: 5px;
 }
 .page3{
-  background-color: #cb7246;
+  background: url(pic/page3.jpg);
   color: #f8f7df;
   text-align: center;
 }
@@ -183,6 +183,11 @@ body {
 .page3 img, .page3 h1, .page3 p{
   position: relative;
 }
+.page3 img{
+  -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+  -moz-box-shadow: 1px 1px 1px 1px #ccc;
+  box-shadow: 1px 1px 1px 1px #ccc;
+}
 #wifi_img{
   margin-top: 15%;
 }
@@ -192,10 +197,12 @@ body {
 #bus{
   display: none;
 }
-.bus_img{
+#bus_img{
+  opacity: 0;
   margin-top: 15%;
-  margin-left: 5%;
-  margin-right: 5%;
+}
+#bus_content{
+  opacity: 0;
 }
 #bus_h1{
   margin-top: 5%;
@@ -204,8 +211,102 @@ body {
   display: none;
 }
 #hack_img{
+  opacity: 0;
   margin-top: 20%;
+}
+#hack_content{
+  opacity: 0;
 }
 #hack_h1{
   margin-top: 8%;
+}
+.page4{
+  background: url(pic/page4.jpg);
+  color: #eaebf3;
+}
+.page4 h1{
+  padding-bottom: 5px;
+  margin-top: 10px;
+}
+#cehua, #kaifa{
+  margin-top: 15%;
+  margin-left: 5%;
+}
+#sheji,#fazhan{
+  margin-top: 15%;
+  margin-left: 5%;
+}
+.box {
+  border: 5px solid #dedfe6;
+  cursor: pointer;
+  height: 250px;
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+  -moz-box-shadow: 1px 1px 1px 1px #ccc;
+  box-shadow: 1px 1px 1px 1px #ccc;
+}
+.box img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out; 
+  transition: all 300ms ease-out;
+}
+.box .caption {
+  background-color: rgba(0,0,0,0.8);
+  position: absolute;
+  color: #eeeff5;
+  z-index: 100;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out; 
+  transition: all 300ms ease-out;
+}
+.box .scale-caption  {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: left;
+}
+.box:hover .scale-caption  {
+  opacity: 1;
+}
+.box:hover img{
+  -moz-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
+.page5{
+  background-color: #a8c72e;
+  color: #fefeee;
+}
+#page5_left{
+  text-align: center;
+}
+#join_us_img{
+  width: 40%;
+  margin-top: 25%;
+  margin-bottom: 30px;
+}
+#try_to_find{
+  font-size: 200%;
+}
+#page5_right h1{
+  margin-top: 30%;
+  margin-bottom: 20px;
+  font-size: 300%;
+}
+#page5_right p{
+  font-size: 120%;
+}
+#email_us{
+  font-size: 140%;
 }

@@ -6,13 +6,14 @@
 	<meta name="title" content="新蜂工作室" />
 	<meta name="description" content="新蜂工作室招新令" />
 	<meta name="author" content="NewBee Studio">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+	<!--link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'-->
+	<!--link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'-->
 	<script type="text/javascript" src="jquery.min.js"></script>
   <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
   <script type="text/javascript" src="bootstrap.min.js"></script>
   <script type="text/javascript" src="jquery.lettering.js"></script>
   <script type="text/javascript" src="jquery.textillate.js"></script>
+  <script type="text/javascript" src="jquery.rotate.js"></script>
   <script type="text/javascript" src="promotion.js"></script>
   <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="promotion.css" rel="stylesheet" type="text/css">
@@ -108,30 +109,35 @@
 	    
 	    <section class="page3">
 	      <div class="page_container">
-          <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="col-xs-3 col-sm-3 col-md-3" id="page3_left">
             <span class="glyphicon glyphicon-chevron-left" id="left_pro"></span>
           </div>
-          <div class="col-xs-6 col-sm-6 col-md-6" id="page3_main">  
+          <div class="col-xs-6 col-sm-6 col-md-6" id="page3_main"> 
             <div id="wifi">
               <img src="pic/wifi.jpg" width="90%" id="wifi_img">
-              <h1 id="wifi_h1">校园wifi数据监控分析平台</h1>
-              <p id="wifi_p">实时统计校园各大AP接入人数和数据流量<br/>以表格、折线图和地图等形式可视化展现结果，动态掌握小伙伴们的活动规律。</p>
+              <div id="wifi_content">
+                <h1 id="wifi_h1">校园wifi数据监控分析平台</h1>
+                <p id="wifi_p">实时统计校园各大AP接入人数和数据流量<br/>以表格、折线图和地图等形式可视化展现结果，动态掌握小伙伴们的活动规律。</p>
+              </div>
             </div>
             <div id="bus">
-              <img src="pic/bus1.jpg" width="35%" class="bus_img">
-              <img src="pic/bus2.jpg" width="35%" class="bus_img">
-              <h1 id="bus_h1">BusBuddy校车乘坐助手</h1>
-              <p id="bus_p">手指动一动，就可以随时随地实时查询校车位置及车载人数<br/>
+              <img src="pic/bus.jpg" width="75%" id="bus_img">
+              <div id="bus_content">
+                <h1 id="bus_h1">BusBuddy校车乘坐助手</h1>
+                <p id="bus_p">手指动一动，就可以随时随地实时查询校车位置及车载人数<br/>
                 荣获上海交通大学第一届“华为杯”一等奖。</p>
+              </div>
             </div>
             <div id="hack">
               <img src="pic/hack.jpg" width="90%" id="hack_img">
-              <h1 id="hack_h1">Hackathon黑客马拉松</h1>
-              <p id="hack_p">将于本学期举办第一届“黑客马拉松”活动，以“空气监测”为主题<br/>致力于打造一个开放的创新平台，发现你我身边勇于创新敢于动手的小伙伴<br/>
-              Sponsored by Omnilab & GitCafe</p>
+              <div id="hack_content">
+                <h1 id="hack_h1">Hackathon黑客马拉松</h1>
+                <p id="hack_p">将于本学期举办第一届“黑客马拉松”活动，以“空气监测”为主题<br/>致力于打造一个开放的创新平台，发现你我身边勇于创新敢于动手的小伙伴<br/>
+                Sponsored by Omnilab & GitCafe</p>
+              </div>
             </div>
           </div>
-          <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="col-xs-3 col-sm-3 col-md-3" id="page3_right">
             <span class="glyphicon glyphicon-chevron-right" id="right_pro"></span>
           </div>
   	    </div>
@@ -139,15 +145,69 @@
 
       <section class="page4">
         <div class="page_container">
-          <h1>团队组成</h1>
-          <p>四个部门</p>
+          <div class="col-xs-1 col-sm-1 col-md-1"></div>
+          <div class="col-xs-5 col-sm-5 col-md-5">
+            <div id="cehua" class="box">
+              <img src="pic/plan.jpg">
+              <span class="caption scale-caption">
+                <h1>策划部</h1>
+                <p>&nbsp;&nbsp;策划部是创意的源泉，依托于工作室工作的两大方向，在工作室的产品创意与活动策划中发挥主要职能。策划部的创意不仅是产品的灵魂，在产品推广、运营、及工作室的发展也上发挥着举足轻重的作用。</p>
+                <p>&nbsp;&nbsp;如果你创意不断，如果你热衷创新，如果你想要看到创意变成真实可用的东西、想要为生活做出一点改变，那么创意小伙伴们在等你，不妨加入我们的策划部，一起点燃创意的火焰。</p>
+              </span>
+            </div>
+            <div id="sheji" class="box">
+              <img src="pic/design.jpg">
+              <span class="caption scale-caption">
+                <h1>设计部</h1>
+                <p>&nbsp;&nbsp;与互联网产品相对应，设计部主要分为视觉设计与交互设计两大类。视觉设计关乎产品最直观的外部感受，美观而简洁的视觉设计能带来清爽大气的感觉；交互设计设计使用过程中的综合体验，完备而细致的交互设计能充分体现对用户的贴心。</p>
+                <p>&nbsp;&nbsp;也许你只是爱画画、爱构思，也许只是平日休闲时玩会PS、 Illustrator，但如果你对设计有着自己的感悟，你是不是更想看到产品使用你的设计作品？我们希望和你一起学习、一起分享、一起为产品穿上最美丽的嫁衣。</p>
+              </span>
+            </div>
+          </div>
+          <div class="col-xs-5 col-sm-5 col-md-5">
+            <div id="kaifa" class="box">
+              <img src="pic/coding.jpg">
+              <span class="caption scale-caption">
+                <h1>开发部</h1>
+                <p>&nbsp;&nbsp;开发部是技术的中心，分为移动组与web组。对于我们的技术团队而言，只有想不到没有做不到。优厚的硬件设施为产品的技术开发锦上添花，不懈的coding热情让前进的动力源源不断。</p>
+                <p>&nbsp;&nbsp;这里的程序猿不止爱用代码实现创意，也像正常人一样爱吃爱玩、随和易相处。加入我们，在技术探索中一起玩乐，成为一名逻辑严谨、技术到位、情商高、会生活的高级程序猿。</p>
+              </span>
+            </div>
+            <div id="fazhan" class="box">
+              <img src="pic/growth.jpg">
+              <span class="caption scale-caption">
+                <h1>发展部</h1>
+                <p>&nbsp;&nbsp;发展部主要负责产品的运营与工作室的发展。产品运营需要与策划部合作，将产品的创意与精髓通过恰当的方式传播与推广出去；工作室项目的承接与洽谈、团队的招募与培训、校园活动的宣传与联络等，也都少不了发展部的协调与努力。</p>
+                <p>&nbsp;&nbsp;你有没有梦想成为一名经济人，策划包装推广自己的产品，并看到它在众多产品中脱颖而出？你是否想要锻炼自己的外联与公关能力？不妨加入发展部一试，新蜂的优秀资源会给你很大帮助，你也一定能让我们更上一层楼。</p>
+              </span>
+            </div>
+          </div>
+          <div class="col-xs-1 col-sm-1 col-md-1"></div>
         </div>
       </section>
 
       <section class="page5">
         <div class="page_container">
-          <h1>加入我们</h1>
-          <p>口号你懂的+联系方式</p>
+          <div class="col-xs-1 col-sm-1 col-md-1"></div>
+          <div class="col-xs-4 col-sm-4 col-md-4" id="page5_left">
+            <img src="pic/join_us.jpg" id="join_us_img">
+            <p id="try_to_find">we try to find you!</p>
+          </div>
+          <div class="col-xs-1 col-sm-1 col-md-1"></div>
+          <div class="col-xs-4 col-sm-4 col-md-4" id="page5_right"> 
+            <h1>加入我们</h1>
+            <p>——————————————————————</p>
+            <p>如果你热爱技术、关注移动互联网</p>
+            <p>如果你富于创意、期待尽情放飞想象</p>
+            <p>如果你拥有热情、渴望加速提升自我</p>
+            <p>如果你认可我们的价值观，愿意成为我们中的一员</p>
+            <p>——————————————————————</p>
+            <p>那么我们随时欢迎，你的加入！</p>
+            <p>——————————————————————</p>
+            <span id="email_us">Email: NewBeeio@163.com</span>
+            <p>——————————————————————</p>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2"></div>
         </div>
       </section>
     </div>

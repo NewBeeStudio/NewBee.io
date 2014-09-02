@@ -28,6 +28,14 @@ $(document).ready(function(){
 		left = false;
 		right = false;
 	});
+	$("#page3_left").mouseenter(function(){
+		$("#left_pro").fadeTo("fast",0.85);
+		left = true;
+	});
+	$("#page3_right").mouseenter(function(){
+		$("#right_pro").fadeTo("fast",0.85);
+		right = true;
+	});
 
 	$(".page3").click(function(){
 		if(left){
@@ -59,7 +67,18 @@ $(document).ready(function(){
 				default:
 					break;
 			}
-			$(current+"img").animate({left:"30%"},"slow");
+			$(current + "_content").animate({opacity:"0", marginLeft: "+=5%"},"100");
+			$(current + "_img").animate({opacity:"0", marginLeft: "+=15%"},"100", function(){
+				$(current).hide(function(){
+					$(current + "_content").animate({marginLeft: "-=5%"});
+					$(current + "_img").animate({marginLeft: "-=15%"});
+					$(next).show();
+					$(next + "_content").animate({marginLeft: "-=5%"});
+					$(next + "_img").animate({marginLeft: "-=15%"});
+					$(next + "_content").animate({opacity:"1", marginLeft: "+=5%"},"100");
+					$(next + "_img").animate({opacity:"1", marginLeft: "+=15%"},"100");
+				});
+			});
 		}
 		else if(right){
 			switch(current_pos){
@@ -90,9 +109,22 @@ $(document).ready(function(){
 				default:
 					break;
 			}
-			$(current).fadeOut("slow",function(){
-				$(next).fadeIn("slow");
+			$(current + "_content").animate({opacity:"0", marginRight: "+=5%"},"100");
+			$(current + "_img").animate({opacity:"0", marginRight: "+=15%"},"100", function(){
+				$(current).hide(function(){
+					$(current + "_content").animate({marginRight: "-=5%"});
+					$(current + "_img").animate({marginRight: "-=15%"});
+					$(next).show();
+					$(next + "_content").animate({marginRight: "-=5%"});
+					$(next + "_img").animate({marginRight: "-=15%"});
+					$(next + "_content").animate({opacity:"1", marginRight: "+=5%"},"100");
+					$(next + "_img").animate({opacity:"1", marginRight: "+=15%"},"100");
+				});
 			});
 		}
 	});
+
+	setInterval(function(){
+		$("#join_us_img").rotateRight(45);
+	},2000);
 });
