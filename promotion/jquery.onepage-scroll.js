@@ -116,7 +116,7 @@
         $('.right_bottom').textillate({
           initialDelay: 1000,
           in:{
-            delay: 120,
+            delay: 80,
             effect: 'bounce'
           }
         });

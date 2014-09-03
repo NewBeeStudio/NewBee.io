@@ -183,11 +183,6 @@ body {
 .page3 img, .page3 h1, .page3 p{
   position: relative;
 }
-.page3 img{
-  -webkit-box-shadow: 1px 1px 1px 1px #ccc;
-  -moz-box-shadow: 1px 1px 1px 1px #ccc;
-  box-shadow: 1px 1px 1px 1px #ccc;
-}
 #wifi_img{
   margin-top: 15%;
 }
@@ -293,7 +288,7 @@ body {
 }
 #join_us_img{
   width: 40%;
-  margin-top: 25%;
+  margin-top: 30%;
   margin-bottom: 30px;
 }
 #try_to_find{
@@ -307,6 +302,10 @@ body {
 #page5_right p{
   font-size: 120%;
 }
-#email_us{
-  font-size: 140%;
+#contact_way{
+  margin-top: 20px;
+  text-align: right;
+}
+#contact_way img{
+  width: 35px;
 }
