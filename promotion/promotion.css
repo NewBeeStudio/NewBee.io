@@ -190,7 +190,7 @@ body {
   position: relative;
 }
 #wifi_img{
-  margin-top: 15%;
+  margin-top: 12%;
 }
 #wifi_h1{
   margin-top: 5%;
@@ -200,7 +200,7 @@ body {
 }
 #bus_img{
   opacity: 0;
-  margin-top: 15%;
+  margin-top: 12%;
 }
 #bus_content{
   opacity: 0;
@@ -213,13 +213,13 @@ body {
 }
 #hack_img{
   opacity: 0;
-  margin-top: 20%;
+  margin-top: 13%;
 }
 #hack_content{
   opacity: 0;
 }
 #hack_h1{
-  margin-top: 8%;
+  margin-top: 6%;
 }
 .page4{
   background: url(pic/page4.jpg);
@@ -232,17 +232,17 @@ body {
 }
 #cehua, #kaifa{
   margin-top: 15%;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 #sheji,#fazhan{
-  margin-top: 15%;
-  margin-left: 5%;
+  margin-top: 20%;
+  margin-left: 10%;
 }
 .box {
   border: 5px solid #dedfe6;
   cursor: pointer;
-  height: 250px;
-  width: 90%;
+  height: 200px;
+  width: 80%;
   position: relative;
   overflow: hidden;
   -webkit-box-shadow: 1px 1px 1px 1px #ccc;
@@ -275,6 +275,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 20px;
+  padding-top: 25px;
   text-align: left;
 }
 .box:hover .scale-caption  {
@@ -302,7 +303,7 @@ body {
   font-size: 200%;
 }
 #page5_right h1{
-  margin-top: 30%;
+  margin-top: 20%;
   margin-bottom: 20px;
   font-size: 300%;
 }

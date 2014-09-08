@@ -70,16 +70,15 @@ $(document).ready(function(){
 			}
 			current_pos -= 1;
 			if(current_pos == 0)current_pos = 3;
-			$(next + "_content").animate({marginLeft: "-=5%"},"fast");
-			$(next + "_img").animate({marginLeft: "-=15%"},"fast",function(){
-				$(current + "_content").animate({opacity:"0", marginLeft: "+=5%"},"fast");
-				$(current + "_img").animate({opacity:"0", marginLeft: "+=15%"},"fast", function(){
-					$(current).hide(function(){
-						$(next).show();
-						$(next + "_content").animate({opacity:"1", marginLeft: "+=5%"},"fast");
-						$(next + "_img").animate({opacity:"1", marginLeft: "+=15%"},"fast",function(){
-							$(current + "_content").animate({marginLeft: "-=5%"},"fast");
-							$(current + "_img").animate({marginLeft: "-=15%"},"fast");
+
+			$(next+"_img").animate({marginLeft: "-=100px"},"fast");
+			$(current+"_img").animate({opacity:"0", marginLeft: "+=100px"},"fast",function(){
+				$(current+"_content").animate({opacity:"0"},"fast",function(){
+					$(current).hide();
+					$(next).show();
+					$(next+"_content").animate({opacity:"1"},"fast",function(){
+						$(next+"_img").animate({opacity:"1", marginLeft: "+=100px"},"fast",function(){
+							$(current+"_img").animate({marginLeft: "-=100px"},"fast");
 						});
 					});
 				});
@@ -104,16 +103,15 @@ $(document).ready(function(){
 			}
 			current_pos += 1;
 			if(current_pos == 4)current_pos = 1;
-			$(next + "_content").animate({marginRight: "-=5%"},"fast");
-			$(next + "_img").animate({marginRight: "-=15%"},"fast",function(){
-				$(current + "_content").animate({opacity:"0", marginRight: "+=5%"},"fast");
-				$(current + "_img").animate({opacity:"0", marginRight: "+=15%"},"fast", function(){
-					$(current).hide(function(){
-						$(next).show();
-						$(next + "_content").animate({opacity:"1", marginRight: "+=5%"},"fast");
-						$(next + "_img").animate({opacity:"1", marginRight: "+=15%"},"fast",function(){
-							$(current + "_content").animate({marginRight: "-=5%"},"fast");
-							$(current + "_img").animate({marginRight: "-=15%"},"fast");
+
+			$(next+"_img").animate({marginRight: "-=100px"},"fast");
+			$(current+"_img").animate({opacity:"0", marginRight: "+=100px"},"fast",function(){
+				$(current+"_content").animate({opacity:"0"},"fast",function(){
+					$(current).hide();
+					$(next).show();
+					$(next+"_content").animate({opacity:"1"},"fast",function(){
+						$(next+"_img").animate({opacity:"1", marginRight: "+=100px"},"fast",function(){
+							$(current+"_img").animate({marginRight: "-=100px"},"fast");
 						});
 					});
 				});
