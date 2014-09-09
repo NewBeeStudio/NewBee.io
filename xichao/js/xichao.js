@@ -168,12 +168,14 @@ function nextPage( direction ) {
 	if(current == 1&&!page2_touch){
 		page2_touch = true;
 		setTimeout(function(){
-			$("#logo_v").fadeIn(2000,function(){
+			$("#logo_v").fadeIn(2000);
+			setTimeout(function(){
 				$("#previous2").show();
 				$("#next2").show();
 				$("#previous2").animate({opacity:"0.6",top:"-=2%"},1000);
 				$("#next2").animate({opacity:"0.6",top:"-=2%"},1000);
-			});
+			},1500);
+
 		},2000);
 	}
 }
