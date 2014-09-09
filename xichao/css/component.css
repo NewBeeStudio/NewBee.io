@@ -4,9 +4,6 @@ html, body { height: 100%; }
 	position: relative;
 	width: 100%;
 	height: 100%;
-	-webkit-perspective: 1200px;
-	-moz-perspective: 1200px;
-	perspective: 1200px;
 }
 
 .pt-page {
@@ -17,15 +14,8 @@ html, body { height: 100%; }
 	left: 0;
 	visibility: hidden;
 	overflow: hidden;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transform: translate3d(0, 0, 0);
-	-moz-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	transform-style: preserve-3d;
+	min-width: 1366px;
+	min-height: 768px;
 }
 
 .pt-page-current{
@@ -33,7 +23,7 @@ html, body { height: 100%; }
 	z-index: 1;
 }
 
-.pt-page h1 {
+/*.pt-page h1 {
 	position: absolute;
 	font-weight: 300;
 	font-size: 4.4em;
@@ -56,10 +46,60 @@ html, body { height: 100%; }
 	letter-spacing: 0;
 	display: block;
 	opacity: 0.4;
-}
+}*/
 
 .pt-page-1 {
-	background: #0ac2d2;
+	background: url(../pic/bgimg1.jpg);
+	background-size: 100% 100%;
+}
+#page1_up{
+	position: absolute;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 100%;
+	height: 50%;
+}
+
+#page1_down{
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 100%;
+	height: 50%;
+}
+
+#up_edge{
+	position: absolute;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 0;
+}
+
+#down_edge{
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 0;
+}
+
+#logo_blue, #logo_tran{
+	position: absolute;
+	z-index: 10;
+	width: 250px;
+	top: 34%;
+	left: 43%;
+}
+
+#logo_tran{
+	display: none;
 }
 
 .pt-page-2 {
@@ -82,44 +122,21 @@ html, body { height: 100%; }
 	background: #f68dbb;
 }
 
-.pt-triggers {
-	position: absolute;
-	width: 300px;
-	z-index: 999999;
-	top: 12%;
-	left: 50%;
-	margin-top: 130px;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%); 
-	transform: translateX(-50%);
-}
-
 .pt-touch-button {
-	border: none;
-	font-size: 13px;
-	font-weight: 700;
-	text-transform: uppercase;
-	margin: 10px 0 20px;
-	padding: 0px 20px;
-	line-height: 50px;
-	height: 50px;
-	letter-spacing: 1px;
-	width: 100%;
+	width: 40px;
 	cursor: pointer;
-	display: block;
-	font-family: 'Lato', Calibri, Arial, sans-serif;
-	box-shadow: 0 3px 0 rgba(0,0,0,0.1);
-	background: #fff;
-	color: #aaa;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+	position: absolute;
+	z-index: 10;
 }
 
-.pt-touch-button:active {
-	box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+.previous{
+	opacity: 0;
+	top: 51%;
+	left: 10%;
+}
+
+.next{
+	opacity: 0;
+	top: 52%;
+	left: 88%;
 }

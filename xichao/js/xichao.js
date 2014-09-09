@@ -1,0 +1,55 @@
+var page1_touch = false;
+$(document).ready(function(){
+	$("#logo_blue").mouseenter(function(){
+		if(!page1_touch){
+			page1_touch = true;
+			$("#page1_up").animate({height:"0"},1000,function(){
+				setTimeout(function(){
+					$("#up_edge").animate({height:"8%"},500,function(){
+						setTimeout(function(){
+							$("#up_edge").animate({height:"0"},700);
+						},200);
+					});
+				},300);
+			});
+			$("#page1_down").animate({height:"0"},1000,function(){
+				setTimeout(function(){
+					$("#down_edge").animate({height:"8%"},500,function(){
+						setTimeout(function(){
+							$("#down_edge").animate({height:"0"},700);
+						},200);
+					});
+				},300);
+			});
+			$("#logo_blue").fadeOut(900,function(){
+				setTimeout(function(){
+					$("#logo_blue").fadeIn(400,function(){
+						setTimeout(function(){
+							$("#logo_blue").fadeOut(900);
+						},200);
+					});
+				},300);
+			});
+			$("#logo_tran").fadeIn(900,function(){
+				setTimeout(function(){
+					$("#logo_tran").fadeOut(400,function(){
+						setTimeout(function(){
+							$("#logo_tran").fadeIn(900);
+						},200);
+					});
+				},300);
+			});
+			setTimeout(function(){
+				$(".previous").animate({opacity:"0.6",top:"-=2%"},1000);
+				$(".next").animate({opacity:"0.6",top:"-=2%"},1000);
+			},2500);
+		}
+	});
+
+	$(".pt-touch-button").mouseenter(function(){
+		$(this).css("opacity","0.9");
+	});
+	$(".pt-touch-button").mouseleave(function(){
+		$(this).css("opacity","0.6");
+	});
+});
