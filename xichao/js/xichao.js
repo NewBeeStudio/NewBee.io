@@ -28,23 +28,23 @@ $(document).ready(function(){
 	$("#logo_blue").mouseenter(function(){
 		if(!page1_touch){
 			page1_touch = true;
-			$("#page1_up").animate({height:"0"},1000,function(){
+			$("#page1_up").animate({height:"0"},700,function(){
 				setTimeout(function(){
-					$("#up_edge").animate({height:"8%"},500,function(){
+					$("#up_edge").animate({height:"3%"},300,function(){
 						setTimeout(function(){
-							$("#up_edge").animate({height:"0"},700);
-						},200);
+							$("#up_edge").animate({height:"0"},600);
+						},100);
 					});
-				},300);
+				},0);
 			});
-			$("#page1_down").animate({height:"0"},1000,function(){
+			$("#page1_down").animate({height:"0"},700,function(){
 				setTimeout(function(){
-					$("#down_edge").animate({height:"8%"},500,function(){
+					$("#down_edge").animate({height:"3%"},300,function(){
 						setTimeout(function(){
-							$("#down_edge").animate({height:"0"},700);
-						},200);
+							$("#down_edge").animate({height:"0"},600);
+						},100);
 					});
-				},300);
+				},0);
 			});
 			$("#logo_blue").fadeTo(900,0.3,function(){
 				setTimeout(function(){
