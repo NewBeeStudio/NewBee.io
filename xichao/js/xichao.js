@@ -1,5 +1,9 @@
 var page1_touch = false,
 page2_touch = false,
+page3_touch = false,
+page4_touch = false,
+page5_touch = false,
+page6_touch = false,
 $main = $( '#pt-main' ),
 $pages = $main.children( 'div.pt-page' ),
 pagesCount = $pages.length,
@@ -70,6 +74,10 @@ $(document).ready(function(){
 				$("#previous1").fadeTo(800,0.4);
 				$("#next1").fadeTo(800,0.4);
 			},1500);
+
+
+
+
 		}
 	});
 
@@ -124,6 +132,79 @@ $(document).ready(function(){
 		});
 	});
 	
+	$("#img41").mouseenter(function(){
+		$("#line41").slideDown('slow',function(){
+			$("#photo41").fadeIn('slow');
+		});
+	});
+	$("#img41").mouseleave(function(){
+		$("#line41").slideUp('slow',function(){
+			$("#photo41").fadeOut('slow');
+		});
+	});
+	$("#img42").mouseenter(function(){
+		$("#line42").slideDown('slow',function(){
+			$("#photo42").fadeIn('slow');
+		});
+	});
+	$("#img42").mouseleave(function(){
+		$("#line42").slideUp('slow',function(){
+			$("#photo42").fadeOut('slow');
+		});
+	});
+
+	$("#img51").mouseenter(function(){
+		$("#line51").slideDown('slow',function(){
+			$("#photo51").fadeIn('slow');
+		});
+	});
+	$("#img51").mouseleave(function(){
+		$("#line51").slideUp('slow',function(){
+			$("#photo51").fadeOut('slow');
+		});
+	});
+	$("#img52").mouseenter(function(){
+		$("#line52").slideDown('slow',function(){
+			$("#photo52").fadeIn('slow');
+		});
+	});
+	$("#img52").mouseleave(function(){
+		$("#line52").slideUp('slow',function(){
+			$("#photo52").fadeOut('slow');
+		});
+	});
+	$("#img53").mouseenter(function(){
+		$("#line53").slideDown('slow',function(){
+			$("#photo53").fadeIn('slow');
+		});
+	});
+	$("#img53").mouseleave(function(){
+		$("#line53").slideUp('slow',function(){
+			$("#photo53").fadeOut('slow');
+		});
+	});
+	$("#img54").mouseenter(function(){
+		$("#line54").slideDown('slow',function(){
+			$("#photo54").fadeIn('slow');
+		});
+	});
+	$("#img54").mouseleave(function(){
+		$("#line54").slideUp('slow',function(){
+			$("#photo54").fadeOut('slow');
+		});
+	});
+	$("#img55").mouseenter(function(){
+		$("#line55").slideDown('slow',function(){
+			$("#photo55").fadeIn('slow');
+		});
+	});
+	$("#img55").mouseleave(function(){
+		$("#line55").slideUp('slow',function(){
+			$("#photo55").fadeOut('slow');
+		});
+	});
+	
+
 	$(".items").mouseenter(function(){
 		$(this).animate({width:"16px"},300);
 	});
@@ -238,6 +319,45 @@ function nextPage( direction ) {
 				$("#next2").show();
 				$("#previous2").fadeTo(800,0.4);
 				$("#next2").fadeTo(800,0.4);
+			},600);
+		},1200);
+	}
+
+	if(current == 2&&!page3_touch){
+		page3_touch = true;
+		setTimeout(function(){
+			$("#logo_v").fadeIn(1000);
+			setTimeout(function(){
+				$("#previous3").show();
+				$("#next3").show();
+				$("#previous3").fadeTo(800,0.4);
+				$("#next3").fadeTo(800,0.4);
+			},600);
+		},1200);
+	}
+
+	if(current == 3&&!page4_touch){
+		page4_touch = true;
+		setTimeout(function(){
+			$("#logo_v").fadeIn(1000);
+			setTimeout(function(){
+				$("#previous4").show();
+				$("#next4").show();
+				$("#previous4").fadeTo(800,0.4);
+				$("#next4").fadeTo(800,0.4);
+			},600);
+		},1200);
+	}
+
+	if(current == 4&&!page5_touch){
+		page5_touch = true;
+		setTimeout(function(){
+			$("#logo_v").fadeIn(1000);
+			setTimeout(function(){
+				$("#previous5").show();
+				$("#next5").show();
+				$("#previous5").fadeTo(800,0.4);
+				$("#next5").fadeTo(800,0.4);
 			},600);
 		},1200);
 	}
