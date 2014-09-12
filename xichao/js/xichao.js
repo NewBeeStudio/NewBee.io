@@ -46,37 +46,62 @@ $(document).ready(function(){
 					});
 				},0);
 			});
-			$("#logo_blue").fadeTo(900,0.3,function(){
+			$("#logo_blue").fadeTo(600,0.3,function(){
 				setTimeout(function(){
-					$("#logo_blue").fadeTo(400,0.7,function(){
+					$("#logo_blue").fadeTo(300,0.7,function(){
 						setTimeout(function(){
-							$("#logo_blue").fadeTo(900,0);
-						},200);
+							$("#logo_blue").fadeTo(700,0);
+						},100);
 					});
-				},300);
+				},0);
 			});
-			$("#logo_tran").fadeTo(900,0.7,function(){
+			$("#logo_tran").fadeTo(600,0.7,function(){
 				setTimeout(function(){
-					$("#logo_tran").fadeTo(400,0.3,function(){
+					$("#logo_tran").fadeTo(300,0.3,function(){
 						setTimeout(function(){
-							$("#logo_tran").fadeTo(900,1);
-						},200);
+							$("#logo_tran").fadeTo(700,1);
+						},100);
 					});
-				},300);
+				},0);
 			});
 			setTimeout(function(){
 				$("#previous1").show();
 				$("#next1").show();
 				$("#previous1").fadeTo(800,0.4);
 				$("#next1").fadeTo(800,0.4);
-			},2500);
+			},1500);
 		}
 	});
 
-	$(".pt-touch-button").mouseenter(function(){
+	$("#img31").mouseenter(function(){
+		$("#photo31").fadeIn('slow');
+	});
+	$("#img31").mouseleave(function(){
+		$("#photo31").fadeOut('slow');
+	});
+	$(".items").mouseenter(function(){
+		$(this).animate({width:"16px"},300);
+	});
+	$(".items").mouseleave(function(){
+		$(this).animate({width:"13px"},300);
+	});
+
+	$(".previous").mouseenter(function(){
 		$(this).css("opacity","0.9");
 	});
-	$(".pt-touch-button").mouseleave(function(){
+	$(".previous").mouseleave(function(){
+		$(this).css("opacity","0.4");
+	});
+	$(".previous").click(function() {
+		if( isAnimating ) {
+			return false;
+		}
+		nextPage(false);
+	});
+	$(".next").mouseenter(function(){
+		$(this).css("opacity","0.9");
+	});
+	$(".next").mouseleave(function(){
 		$(this).css("opacity","0.4");
 	});
 	$(".next").click(function() {
@@ -84,12 +109,6 @@ $(document).ready(function(){
 			return false;
 		}
 		nextPage(true);
-	});
-	$(".previous").click(function() {
-		if( isAnimating ) {
-			return false;
-		}
-		nextPage(false);
 	});
 });
 function nextPage( direction ) {
@@ -168,15 +187,14 @@ function nextPage( direction ) {
 	if(current == 1&&!page2_touch){
 		page2_touch = true;
 		setTimeout(function(){
-			$("#logo_v").fadeIn(800);
+			$("#logo_v").fadeIn(1000);
 			setTimeout(function(){
 				$("#previous2").show();
 				$("#next2").show();
 				$("#previous2").fadeTo(800,0.4);
 				$("#next2").fadeTo(800,0.4);
-			},1200);
-
-		},2000);
+			},600);
+		},1200);
 	}
 }
 
