@@ -1,9 +1,5 @@
 var page1_touch = false,
 page2_touch = false,
-page3_touch = false,
-page4_touch = false,
-page5_touch = false,
-page6_touch = false,
 $main = $( '#pt-main' ),
 $pages = $main.children( 'div.pt-page' ),
 pagesCount = $pages.length,
@@ -74,142 +70,174 @@ $(document).ready(function(){
 				$("#previous1").fadeTo(800,0.4);
 				$("#next1").fadeTo(800,0.4);
 			},1500);
-
-
-
-
 		}
 	});
 
 	$("#img31").mouseenter(function(){
-		$("#line31").slideDown(150,function(){
-			$("#photo31").fadeIn(150);
+		$("#line31").slideDown(250,function(){
+			$("#photo31").fadeIn(250);
 		});
 	});
 	$("#img31").mouseleave(function(){
-		$("#line31").slideUp(150,function(){
-			$("#photo31").fadeOut(150);
-		});
+		setTimeout(function(){
+			$("#line31").slideUp(250,function(){
+				$("#photo31").fadeOut(250);
+			});
+		},100);
 	});
 	$("#img32").mouseenter(function(){
-		$("#line32").slideDown(150,function(){
-			$("#photo32").fadeIn(150);
+		$("#line32").slideDown(250,function(){
+			$("#photo32").fadeIn(250);
 		});
 	});
 	$("#img32").mouseleave(function(){
-		$("#line32").slideUp(150,function(){
-			$("#photo32").fadeOut(150);
-		});
+		setTimeout(function(){
+			$("#line32").slideUp(250,function(){
+				$("#photo32").fadeOut(250);
+			});
+		},100);
 	});
 	$("#img33").mouseenter(function(){
-		$("#line33").slideDown(150,function(){
-			$("#photo33").fadeIn(150);
+		$("#line33").slideDown(250,function(){
+			$("#photo33").fadeIn(250);
 		});
 	});
 	$("#img33").mouseleave(function(){
-		$("#line33").slideUp(150,function(){
-			$("#photo33").fadeOut(150);
-		});
+		setTimeout(function(){
+			$("#line33").slideUp(250,function(){
+				$("#photo33").fadeOut(250);
+			});
+		},100);
 	});
 	$("#img34").mouseenter(function(){
-		$("#line34").slideDown(150,function(){
-			$("#photo34").fadeIn(150);
+		$("#line34").slideDown(250,function(){
+			$("#photo34").fadeIn(250);
 		});
 	});
 	$("#img34").mouseleave(function(){
-		$("#line34").slideUp(150,function(){
-			$("#photo34").fadeOut(150);
-		});
+		setTimeout(function(){
+			$("#line34").slideUp(250,function(){
+				$("#photo34").fadeOut(250);
+			});
+		},100);
 	});
 	$("#img35").mouseenter(function(){
-		$("#line35").slideDown(150,function(){
-			$("#photo35").fadeIn(150);
+		$("#line35").slideDown(250,function(){
+			$("#photo35").fadeIn(250);
 		});
 	});
 	$("#img35").mouseleave(function(){
-		$("#line35").slideUp(150,function(){
-			$("#photo35").fadeOut(150);
-		});
+		setTimeout(function(){
+			$("#line35").slideUp(250,function(){
+				$("#photo35").fadeOut(250);
+			});
+		},100);
 	});
 	
 	$("#img41").mouseenter(function(){
-		$("#line41").slideDown('slow',function(){
-			$("#photo41").fadeIn('slow');
+		$("#line41").slideDown(250,function(){
+			$("#photo41").fadeIn(250);
 		});
 	});
 	$("#img41").mouseleave(function(){
-		$("#line41").slideUp('slow',function(){
-			$("#photo41").fadeOut('slow');
-		});
+		setTimeout(function(){
+			$("#line41").slideUp(250,function(){
+				$("#photo41").fadeOut(250);
+			});
+		},100);
 	});
 	$("#img42").mouseenter(function(){
-		$("#line42").slideDown('slow',function(){
-			$("#photo42").fadeIn('slow');
+		$("#line42").slideDown(250,function(){
+			$("#photo42").fadeIn(250);
 		});
 	});
 	$("#img42").mouseleave(function(){
-		$("#line42").slideUp('slow',function(){
-			$("#photo42").fadeOut('slow');
-		});
+		setTimeout(function(){
+			$("#line42").slideUp(250,function(){
+				$("#photo42").fadeOut(250);
+			});
+		},100);
 	});
 
 	$("#img51").mouseenter(function(){
-		$("#line51").slideDown('slow',function(){
-			$("#photo51").fadeIn('slow');
+		$("#line51").slideDown(250,function(){
+			$("#photo51").fadeIn(250);
 		});
 	});
 	$("#img51").mouseleave(function(){
-		$("#line51").slideUp('slow',function(){
-			$("#photo51").fadeOut('slow');
-		});
+		setTimeout(function(){
+			$("#line51").slideUp(250,function(){
+				$("#photo51").fadeOut(250);
+			});
+		},100);
 	});
 	$("#img52").mouseenter(function(){
-		$("#line52").slideDown('slow',function(){
-			$("#photo52").fadeIn('slow');
+		$("#line52").slideDown(250,function(){
+			$("#photo52").fadeIn(250);
 		});
 	});
 	$("#img52").mouseleave(function(){
-		$("#line52").slideUp('slow',function(){
-			$("#photo52").fadeOut('slow');
-		});
+		setTimeout(function(){
+			$("#line52").slideUp(250,function(){
+				$("#photo52").fadeOut(250);
+			});
+		},100);
 	});
 	$("#img53").mouseenter(function(){
-		$("#line53").slideDown('slow',function(){
-			$("#photo53").fadeIn('slow');
+		$("#line53").slideDown(250,function(){
+			$("#photo53").fadeIn(250);
 		});
 	});
 	$("#img53").mouseleave(function(){
-		$("#line53").slideUp('slow',function(){
-			$("#photo53").fadeOut('slow');
-		});
+		setTimeout(function(){
+			$("#line53").slideUp(250,function(){
+				$("#photo53").fadeOut(250);
+			});
+		},100);
 	});
 	$("#img54").mouseenter(function(){
-		$("#line54").slideDown('slow',function(){
-			$("#photo54").fadeIn('slow');
+		$("#line54").slideDown(250,function(){
+			$("#photo54").fadeIn(250);
 		});
 	});
 	$("#img54").mouseleave(function(){
-		$("#line54").slideUp('slow',function(){
-			$("#photo54").fadeOut('slow');
-		});
+		setTimeout(function(){
+			$("#line54").slideUp(250,function(){
+				$("#photo54").fadeOut(250);
+			});
+		},100);
 	});
 	$("#img55").mouseenter(function(){
-		$("#line55").slideDown('slow',function(){
-			$("#photo55").fadeIn('slow');
+		$("#line55").slideDown(250,function(){
+			$("#photo55").fadeIn(250);
 		});
 	});
 	$("#img55").mouseleave(function(){
-		$("#line55").slideUp('slow',function(){
-			$("#photo55").fadeOut('slow');
-		});
+		setTimeout(function(){
+			$("#line55").slideUp(250,function(){
+				$("#photo55").fadeOut(250);
+			});
+		},100);
 	});
 	
 
-	$(".items").mouseenter(function(){
+	$(".items3").mouseenter(function(){
 		$(this).animate({width:"16px"},300);
 	});
-	$(".items").mouseleave(function(){
+	$(".items3").mouseleave(function(){
 		$(this).animate({width:"13px"},300);
+	});
+	$(".items4").mouseenter(function(){
+		$(this).animate({width:"22px"},300);
+	});
+	$(".items4").mouseleave(function(){
+		$(this).animate({width:"18px"},300);
+	});
+	$(".items5").mouseenter(function(){
+		$(this).animate({width:"22px"},300);
+	});
+	$(".items5").mouseleave(function(){
+		$(this).animate({width:"18px"},300);
 	});
 
 	$(".previous").mouseenter(function(){
@@ -320,46 +348,7 @@ function nextPage( direction ) {
 				$("#previous2").fadeTo(800,0.4);
 				$("#next2").fadeTo(800,0.4);
 			},600);
-		},1200);
-	}
-
-	if(current == 2&&!page3_touch){
-		page3_touch = true;
-		setTimeout(function(){
-			$("#logo_v").fadeIn(1000);
-			setTimeout(function(){
-				$("#previous3").show();
-				$("#next3").show();
-				$("#previous3").fadeTo(800,0.4);
-				$("#next3").fadeTo(800,0.4);
-			},600);
-		},1200);
-	}
-
-	if(current == 3&&!page4_touch){
-		page4_touch = true;
-		setTimeout(function(){
-			$("#logo_v").fadeIn(1000);
-			setTimeout(function(){
-				$("#previous4").show();
-				$("#next4").show();
-				$("#previous4").fadeTo(800,0.4);
-				$("#next4").fadeTo(800,0.4);
-			},600);
-		},1200);
-	}
-
-	if(current == 4&&!page5_touch){
-		page5_touch = true;
-		setTimeout(function(){
-			$("#logo_v").fadeIn(1000);
-			setTimeout(function(){
-				$("#previous5").show();
-				$("#next5").show();
-				$("#previous5").fadeTo(800,0.4);
-				$("#next5").fadeTo(800,0.4);
-			},600);
-		},1200);
+		},800);
 	}
 }
 
