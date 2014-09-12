@@ -82,53 +82,53 @@ $(document).ready(function(){
 	});
 
 	$("#img31").mouseenter(function(){
-		$("#line31").slideDown('slow',function(){
-			$("#photo31").fadeIn('slow');
+		$("#line31").slideDown(150,function(){
+			$("#photo31").fadeIn(150);
 		});
 	});
 	$("#img31").mouseleave(function(){
-		$("#line31").slideUp('slow',function(){
-			$("#photo31").fadeOut('slow');
+		$("#line31").slideUp(150,function(){
+			$("#photo31").fadeOut(150);
 		});
 	});
 	$("#img32").mouseenter(function(){
-		$("#line32").slideDown('slow',function(){
-			$("#photo32").fadeIn('slow');
+		$("#line32").slideDown(150,function(){
+			$("#photo32").fadeIn(150);
 		});
 	});
 	$("#img32").mouseleave(function(){
-		$("#line32").slideUp('slow',function(){
-			$("#photo32").fadeOut('slow');
+		$("#line32").slideUp(150,function(){
+			$("#photo32").fadeOut(150);
 		});
 	});
 	$("#img33").mouseenter(function(){
-		$("#line33").slideDown('slow',function(){
-			$("#photo33").fadeIn('slow');
+		$("#line33").slideDown(150,function(){
+			$("#photo33").fadeIn(150);
 		});
 	});
 	$("#img33").mouseleave(function(){
-		$("#line33").slideUp('slow',function(){
-			$("#photo33").fadeOut('slow');
+		$("#line33").slideUp(150,function(){
+			$("#photo33").fadeOut(150);
 		});
 	});
 	$("#img34").mouseenter(function(){
-		$("#line34").slideDown('slow',function(){
-			$("#photo34").fadeIn('slow');
+		$("#line34").slideDown(150,function(){
+			$("#photo34").fadeIn(150);
 		});
 	});
 	$("#img34").mouseleave(function(){
-		$("#line34").slideUp('slow',function(){
-			$("#photo34").fadeOut('slow');
+		$("#line34").slideUp(150,function(){
+			$("#photo34").fadeOut(150);
 		});
 	});
 	$("#img35").mouseenter(function(){
-		$("#line35").slideDown('slow',function(){
-			$("#photo35").fadeIn('slow');
+		$("#line35").slideDown(150,function(){
+			$("#photo35").fadeIn(150);
 		});
 	});
 	$("#img35").mouseleave(function(){
-		$("#line35").slideUp('slow',function(){
-			$("#photo35").fadeOut('slow');
+		$("#line35").slideUp(150,function(){
+			$("#photo35").fadeOut(150);
 		});
 	});
 	

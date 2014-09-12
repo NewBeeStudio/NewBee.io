@@ -68,7 +68,7 @@ html, body { height: 100%; }
 #logo_blue, #logo_tran {
 	position: absolute;
 	z-index: 10;
-	width: 20%;
+	width: 18%;
 	top: 32%;
 	left: 40%;
 }
@@ -324,10 +324,9 @@ html, body { height: 100%; }
 	cursor: pointer;
 	position: absolute;
 	z-index: 10;
-	opacity: 0;
-	display: none;
+	opacity: 0.4;
 	top: 49%;
-	left: 10%;
+	left: 8%;
 }
 
 .next {
@@ -335,10 +334,14 @@ html, body { height: 100%; }
 	cursor: pointer;
 	position: absolute;
 	z-index: 10;
-	opacity: 0;
-	display: none;
+	opacity: 0.4;
 	top: 50%;
-	left: 88%;
+	left: 90%;
+}
+
+#next1, #next2, #previous1, #previous2{
+	display: none;
+	opacity: 0;
 }
 
 .previous:hover, .next:hover {
