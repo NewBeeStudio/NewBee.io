@@ -68,9 +68,9 @@ html, body { height: 100%; }
 #logo_blue, #logo_tran {
 	position: absolute;
 	z-index: 10;
-	width: 250px;
+	width: 20%;
 	top: 32%;
-	left: 42%;
+	left: 40%;
 }
 
 #logo_tran {
@@ -78,7 +78,7 @@ html, body { height: 100%; }
 }
 
 .pt-page-2 {
-	background: url(../pic/bgimg2.jpg);
+	background: url(../pic/bgimg1.jpg);
 	background-size: 100% 100%;
 }
 
@@ -91,7 +91,7 @@ html, body { height: 100%; }
 }
 
 #logo_v {
-	width: 2%;
+	width: 25px;
 	height: 40%;
 	display: none;
 	position: absolute;
@@ -131,8 +131,32 @@ html, body { height: 100%; }
 	left: 57%;
 }
 
-#center_part3 {
-	text-align: center;
+.lines {
+	position: absolute;
+	top: 18px;
+	width: 2px;
+	height: 18%;
+	display: none;
+}
+
+#line31 {
+	left: 28%;
+}
+
+#line32 {
+	left: 35%;
+}
+
+#line33 {
+	left: 42%;
+}
+
+#line34 {
+	left: 49%;
+}
+
+#line35 {
+	left: 56%;
 }
 
 #blue_v3 {
@@ -150,6 +174,7 @@ html, body { height: 100%; }
 	width: 70%;
 	height: 55%;
 	top: 24%;
+	left: 15%;
 	z-index:10;
 }
 

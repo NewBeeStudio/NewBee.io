@@ -74,11 +74,56 @@ $(document).ready(function(){
 	});
 
 	$("#img31").mouseenter(function(){
-		$("#photo31").fadeIn('slow');
+		$("#line31").slideDown('slow',function(){
+			$("#photo31").fadeIn('slow');
+		});
 	});
 	$("#img31").mouseleave(function(){
-		$("#photo31").fadeOut('slow');
+		$("#line31").slideUp('slow',function(){
+			$("#photo31").fadeOut('slow');
+		});
 	});
+	$("#img32").mouseenter(function(){
+		$("#line32").slideDown('slow',function(){
+			$("#photo32").fadeIn('slow');
+		});
+	});
+	$("#img32").mouseleave(function(){
+		$("#line32").slideUp('slow',function(){
+			$("#photo32").fadeOut('slow');
+		});
+	});
+	$("#img33").mouseenter(function(){
+		$("#line33").slideDown('slow',function(){
+			$("#photo33").fadeIn('slow');
+		});
+	});
+	$("#img33").mouseleave(function(){
+		$("#line33").slideUp('slow',function(){
+			$("#photo33").fadeOut('slow');
+		});
+	});
+	$("#img34").mouseenter(function(){
+		$("#line34").slideDown('slow',function(){
+			$("#photo34").fadeIn('slow');
+		});
+	});
+	$("#img34").mouseleave(function(){
+		$("#line34").slideUp('slow',function(){
+			$("#photo34").fadeOut('slow');
+		});
+	});
+	$("#img35").mouseenter(function(){
+		$("#line35").slideDown('slow',function(){
+			$("#photo35").fadeIn('slow');
+		});
+	});
+	$("#img35").mouseleave(function(){
+		$("#line35").slideUp('slow',function(){
+			$("#photo35").fadeOut('slow');
+		});
+	});
+	
 	$(".items").mouseenter(function(){
 		$(this).animate({width:"16px"},300);
 	});
