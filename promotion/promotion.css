@@ -98,7 +98,6 @@ html {
   height: 100%;
 }
 body {
-  min-width: 1280px;
   background: #E2E4E7;
   padding: 0;
   font-family: Arial, Microsoft Yahei;
@@ -121,23 +120,23 @@ body {
 .page1, .page2, .page3, .page4, .page5{
   margin: 0 auto;
   padding: 0 auto;
-  min-height: 600px;
+  min-width: 1024px;
+  min-height: 720px;
 }
 .page1{
   background-image: url(pic/bgimg.jpg);
   background-size: 100% 100%;
 }
 .page1 h1{
-  margin-top: 40%; 
-  font-size: 500%;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  margin-top: 210px; 
+  font-size: 450%;
 }
 .page1 h2{
-  font-size: 250%;
+  font-size: 300%;
 }
-.page1 p{
-  font-size: 150%;
+.page1 img{
+  margin-top: 200px;
+  width: 200px;
 }
 .page2{
   background: url(pic/page2.jpg);
@@ -152,16 +151,18 @@ body {
   font-family: Arial,KaiTi;
 }
 #page2_11{
+  width: 90%;
   margin-top: 20%;
 }
 #page2_12{
   margin-top: 13%;
 }
 #page2_21{
+  width: 90%;
   margin-top: 22%;
 }
 #page2_22{
-  margin-top: 10%;
+  margin-top: 11%;
   text-align: right;
 }
 #myCarousel{
@@ -174,12 +175,12 @@ body {
   text-align: center;
 }
 #left_pro{
-  margin-top: 80%;
+  margin-top: 300px;
   font-size: 400%;
   opacity: 0.15;
 }
 #right_pro{
-  margin-top: 80%;
+  margin-top: 300px;
   font-size: 400%;
   opacity: 0.15;
 }
@@ -190,36 +191,39 @@ body {
   position: relative;
 }
 #wifi_img{
-  margin-top: 12%;
+  margin-top: 8%;
 }
 #wifi_h1{
-  margin-top: 5%;
+  margin-top: 25px;
 }
 #bus{
   display: none;
 }
 #bus_img{
   opacity: 0;
-  margin-top: 12%;
+  margin-top: 8%;
 }
 #bus_content{
   opacity: 0;
 }
 #bus_h1{
-  margin-top: 5%;
+  margin-top: 25px;
 }
 #hack{
   display: none;
 }
 #hack_img{
   opacity: 0;
-  margin-top: 13%;
+  margin-top: 9%;
 }
 #hack_content{
   opacity: 0;
 }
 #hack_h1{
-  margin-top: 6%;
+  margin-top: 30px;
+}
+.page3 p {
+  font-size: 120%;
 }
 .page4{
   background: url(pic/page4.jpg);
@@ -229,20 +233,20 @@ body {
   padding-bottom: 5px;
   margin-top: 0;
   padding-top: 0;
+  font-size: 300%; 
 }
-#cehua, #kaifa{
-  margin-top: 15%;
-  margin-left: 10%;
+.page4 p {
+  font-size: 130%;
 }
-#sheji,#fazhan{
-  margin-top: 20%;
+#kaifa, #sheji{
+  margin-top: 30%;
   margin-left: 10%;
 }
 .box {
   border: 5px solid #dedfe6;
   cursor: pointer;
-  height: 200px;
-  width: 80%;
+  height: 390px;
+  width: 90%;
   position: relative;
   overflow: hidden;
   -webkit-box-shadow: 1px 1px 1px 1px #ccc;
@@ -295,12 +299,12 @@ body {
   text-align: center;
 }
 #join_us_img{
-  width: 40%;
-  margin-top: 30%;
+  width: 50%;
+  margin-top: 35%;
   margin-bottom: 30px;
 }
 #try_to_find{
-  font-size: 200%;
+  font-size: 270%;
 }
 #page5_right h1{
   margin-top: 20%;
