@@ -105,7 +105,8 @@ body {
   margin: 0;
   height: 100%;
   -webkit-font-smoothing: antialiased;
-}   
+}  
+
 .wrapper {
   height: 100%;
   height: 100%;
@@ -136,7 +137,12 @@ body {
 }
 .page1 img{
   margin-top: 200px;
-  width: 200px;
+  width: 250px;
+}
+#download {
+  color: #2e2d33;
+  text-decoration: none;
+  font-size: 90%;
 }
 .page2{
   background: url(pic/page2.jpg);
@@ -155,6 +161,8 @@ body {
   margin-top: 20%;
 }
 #page2_12{
+  width: 100%;
+  height: 70%;
   margin-top: 13%;
 }
 #page2_21{
@@ -162,7 +170,7 @@ body {
   margin-top: 22%;
 }
 #page2_22{
-  margin-top: 11%;
+  margin-top: 30px;
   text-align: right;
 }
 #myCarousel{
@@ -190,6 +198,9 @@ body {
 .page3 img, .page3 h1, .page3 p{
   position: relative;
 }
+.page3 img {
+  height: 480px;
+}
 #wifi_img{
   margin-top: 8%;
 }
@@ -214,13 +225,13 @@ body {
 }
 #hack_img{
   opacity: 0;
-  margin-top: 9%;
+  margin-top: 8%;
 }
 #hack_content{
   opacity: 0;
 }
 #hack_h1{
-  margin-top: 30px;
+  margin-top: 25px;
 }
 .page3 p {
   font-size: 120%;
@@ -229,7 +240,7 @@ body {
   background: url(pic/page4.jpg);
   color: #eaebf3;
 }
-.page4 h1{
+.page4 h1 {
   padding-bottom: 5px;
   margin-top: 0;
   padding-top: 0;
@@ -240,13 +251,13 @@ body {
 }
 #kaifa, #sheji{
   margin-top: 30%;
-  margin-left: 10%;
+  margin-left: 18%;
 }
 .box {
   border: 5px solid #dedfe6;
   cursor: pointer;
   height: 390px;
-  width: 90%;
+  width: 410px;
   position: relative;
   overflow: hidden;
   -webkit-box-shadow: 1px 1px 1px 1px #ccc;
@@ -264,7 +275,7 @@ body {
   transition: all 300ms ease-out;
 }
 .box .caption {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(44,10,50,0.9);
   position: absolute;
   color: #eeeff5;
   z-index: 100;
