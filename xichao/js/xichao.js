@@ -185,7 +185,9 @@ $(document).ready(function(){
 	});
 	$("#img53").mouseenter(function(){
 		$("#line53").slideDown(250,function(){
-			$("#photo53").fadeIn(250);
+			$("#photo53").fadeIn(250,function(){
+				$("#download").fadeIn(250);
+			});
 		});
 	});
 	$("#img53").mouseleave(function(){
@@ -218,6 +220,9 @@ $(document).ready(function(){
 				$("#photo55").fadeOut(250);
 			});
 		},100);
+	});
+	$("#download").click(function(){
+		$(this).fadeOut(250);
 	});
 	
 

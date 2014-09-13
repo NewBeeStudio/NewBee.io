@@ -70,7 +70,7 @@ html, body { height: 100%; }
 	z-index: 10;
 	width: 18%;
 	top: 34%;
-	left: 41%;
+	left: 43%;
 }
 
 #logo_tran {
@@ -190,19 +190,19 @@ html, body { height: 100%; }
 }
 
 #img41 {
-	left: 44%;
+	left: 42%;
 }
 
 #img42 {
-	left: 55%;
+	left: 56%;
 }
 
 #line41 {
-	left: 43%;
+	left: 41%;
 }
 
 #line42 {
-	left: 54%;
+	left: 55%;
 }
 
 #white_h4 {
@@ -291,6 +291,22 @@ html, body { height: 100%; }
 	top: 33%;
 	left: 20%;
 	z-index:10;
+}
+
+#download {
+	position: absolute;
+	top: 70%;
+	left: 45%;
+	height: 20px;
+	z-index: 20;
+	display: none;
+}
+
+#download:hover {
+	-moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .pt-page-6 {
