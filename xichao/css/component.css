@@ -1,4 +1,6 @@
-html, body { height: 100%; }
+html, body { 
+	height: 100%;
+}
 
 .pt-perspective {
 	position: relative;
@@ -7,8 +9,6 @@ html, body { height: 100%; }
 }
 
 .pt-page {
-	width: 100%;
-	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -16,6 +16,10 @@ html, body { height: 100%; }
 	overflow: hidden;
 	min-width: 1024px;
 	min-height: 640px;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .pt-page-current {
@@ -24,6 +28,8 @@ html, body { height: 100%; }
 }
 
 .pt-page-1 {
+	width: 100%;
+	height: 100%;
 	background: url(../pic/bgimg1.jpg);
 	background-size: 100% 100%;
 }
@@ -52,6 +58,7 @@ html, body { height: 100%; }
 	top: 0;
 	margin: 0;
 	padding: 0;
+	display: block;
 	width: 100%;
 	height: 0;
 }
@@ -61,6 +68,7 @@ html, body { height: 100%; }
 	bottom: 0;
 	margin: 0;
 	padding: 0;
+	display: block;
 	width: 100%;
 	height: 0;
 }
@@ -68,9 +76,9 @@ html, body { height: 100%; }
 #logo_blue, #logo_tran {
 	position: absolute;
 	z-index: 10;
-	width: 18%;
-	top: 34%;
-	left: 43%;
+	height: 24%;
+	top: 36%;
+	margin: 0 auto;
 }
 
 #logo_tran {
@@ -80,6 +88,7 @@ html, body { height: 100%; }
 .pt-page-2 {
 	background: url(../pic/bgimg1.jpg);
 	background-size: 100% 100%;
+	text-align: center;
 }
 
 #logo_h {
@@ -103,6 +112,7 @@ html, body { height: 100%; }
 .pt-page-3 {
 	background: url(../pic/bgimg3.jpg);
 	background-size: 100% 100%;
+	text-align: center;
 }
 
 .items3 {
@@ -181,6 +191,7 @@ html, body { height: 100%; }
 .pt-page-4 {	
 	background: url(../pic/bgimg4.jpg);
 	background-size: 100% 100%;
+	text-align: center;
 }
 
 .items4 {
@@ -224,8 +235,8 @@ html, body { height: 100%; }
 }
 
 .pt-page-5 {
-	
-	background: url(../pic/bgimg5.jpg);
+	text-align: center;
+	background: url(../pic/bgimg3.jpg);
 	background-size: 100% 100%;
 }
 
@@ -312,6 +323,7 @@ html, body { height: 100%; }
 .pt-page-6 {
 	background: url(../pic/bgimg6.jpg);
 	background-size: 100% 100%;
+	text-align: center;
 }
 
 .previous {
@@ -340,10 +352,10 @@ html, body { height: 100%; }
 }
 
 .previous:hover, .next:hover {
-	-moz-transform: scale(1.3);
-    -o-transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
+	-moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 #logo2,#logo3,#logo4,#logo5,#logo6{
@@ -351,4 +363,10 @@ html, body { height: 100%; }
 	position:absolute;
 	top: 20px;
 	right: 20px; 
+}
+
+.center_pic {
+	position: absolute;
+	top:35%; 
+	height: 30%;
 }
