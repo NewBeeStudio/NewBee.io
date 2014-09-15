@@ -18,7 +18,6 @@ html, body {
 	min-height: 640px;
 	width: 100%;
 	height: 100%;
-	margin: 0 auto;
 	text-align: center;
 }
 
@@ -28,8 +27,6 @@ html, body {
 }
 
 .pt-page-1 {
-	width: 100%;
-	height: 100%;
 	background: url(../pic/bgimg1.jpg);
 	background-size: 100% 100%;
 }
@@ -74,11 +71,11 @@ html, body {
 }
 
 #logo_blue, #logo_tran {
-	position: absolute;
+	position: relative;
 	z-index: 10;
-	height: 24%;
-	top: 36%;
-	margin: 0 auto;
+	height: 30%;
+	top: 33%;
+	left: 2%;
 }
 
 #logo_tran {
@@ -88,31 +85,29 @@ html, body {
 .pt-page-2 {
 	background: url(../pic/bgimg1.jpg);
 	background-size: 100% 100%;
-	text-align: center;
 }
 
 #logo_h {
 	width: 100%;
-	height: 60%;
+	height: 58%;
 	position: absolute;
-	top: 20%;
+	top: 22%;
+	left: 0;
 	z-index: 1;
 }
 
 #logo_v {
-	width: 25px;
-	height: 40%;
+	height: 44%;
 	display: none;
-	position: absolute;
-	top: 30%;
-	left: 50%;
+	position: relative;
+	top: 28%;
+	left: 1%;
 	z-index: 10;
 }
 
 .pt-page-3 {
 	background: url(../pic/bgimg3.jpg);
 	background-size: 100% 100%;
-	text-align: center;
 }
 
 .items3 {
@@ -122,23 +117,23 @@ html, body {
 }
 
 #img31 {
-	left: 29%;
+	left: 35%;
 }
 
 #img32 {
-	left: 36%;
+	left: 42%;
 }
 
 #img33 {
-	left: 43%;
+	left: 49%;
 }
 
 #img34 {
-	left: 50%;
+	left: 56%;
 }
 
 #img35 {
-	left: 57%;
+	left: 63%;
 }
 
 .lines {
@@ -150,23 +145,23 @@ html, body {
 }
 
 #line31 {
-	left: 28%;
+	left: 34%;
 }
 
 #line32 {
-	left: 35%;
+	left: 41%;
 }
 
 #line33 {
-	left: 42%;
+	left: 48%;
 }
 
 #line34 {
-	left: 49%;
+	left: 55%;
 }
 
 #line35 {
-	left: 56%;
+	left: 62%;
 }
 
 #blue_h3 {
@@ -181,17 +176,30 @@ html, body {
 .photos3 {
 	position: absolute;
 	display: none;
-	width: 70%;
 	height: 55%;
 	top: 24%;
-	left: 15%;
+	width: 50%;
+	left: 25%;
 	z-index:10;
+}
+
+#line_page3 {
+	position: absolute;
+	left: 0;
+	top: 81%;
+	width: 60%;
+}
+
+#address {
+	position: absolute;
+	height: 9%;
+	left: 4%;
+	top: 83%
 }
 
 .pt-page-4 {	
 	background: url(../pic/bgimg4.jpg);
 	background-size: 100% 100%;
-	text-align: center;
 }
 
 .items4 {
@@ -218,7 +226,7 @@ html, body {
 
 #white_h4 {
 	width: 100%;
-	height: 55%;
+	height: 52%;
 	position: absolute;
 	top: 24%;
 	display: block;
@@ -235,7 +243,6 @@ html, body {
 }
 
 .pt-page-5 {
-	text-align: center;
 	background: url(../pic/bgimg3.jpg);
 	background-size: 100% 100%;
 }
@@ -288,7 +295,7 @@ html, body {
 
 #blue_h5 {
 	width: 100%;
-	height: 55%;
+	height: 52%;
 	position: absolute;
 	top: 24%;
 	display: block;
@@ -314,16 +321,46 @@ html, body {
 }
 
 #download:hover {
-	-moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+	-moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .pt-page-6 {
-	background: url(../pic/bgimg6.jpg);
+	background: url(../pic/bgimg4.jpg);
 	background-size: 100% 100%;
-	text-align: center;
+}
+
+#white_page6 {
+	width: 100%;
+	height: 52%;
+	position: absolute;
+	top: 24%;
+	display: block;
+	z-index: 1;
+}
+
+#center_cycle {
+	position: relative;
+	height: 40%;
+	top: 33%;
+	z-index: 10;
+}
+
+#clouds {
+	position: absolute;
+	height: 28%;
+	top: 7%;
+	left: 23%;
+	z-index: 11;
+}
+
+#shuxiang {
+	position: absolute;
+	height: 30%;
+	top: 35%;
+	left: 41%;
 }
 
 .previous {
@@ -343,19 +380,12 @@ html, body {
 	z-index: 10;
 	opacity: 0.4;
 	top: 50%;
-	left: 90%;
+	right: 8%;
 }
 
-#next1, #next2, #previous1, #previous2{
+#next1, #previous1 {
 	display: none;
 	opacity: 0;
-}
-
-.previous:hover, .next:hover {
-	-moz-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
 }
 
 #logo2,#logo3,#logo4,#logo5,#logo6{
@@ -364,9 +394,33 @@ html, body {
 	top: 20px;
 	right: 20px; 
 }
+#logo_newbee {
+	width: 100px;
+	position:absolute;
+	top: 20px;
+	left: 20px; 
+}
 
 .center_pic {
-	position: absolute;
-	top:35%; 
+	position: relative;
 	height: 30%;
+	top: 35%;
+}
+.erweima {
+	height: 18%;
+	position: absolute;
+	bottom: 4%;
+	left: 46%;
+}
+#erweima_xc{
+	height: 18%;
+	position: absolute;
+	bottom: 4%;
+	left: 40%;
+}
+#erweima_nb{
+	height: 18%;
+	position: absolute;
+	bottom: 4%;
+	right: 40%;
 }
