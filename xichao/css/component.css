@@ -236,8 +236,8 @@ html, body {
 .photos4 {
 	position: absolute;
 	display: none;
-	width: 60%;
-	top: 33%;
+	height: 30%;
+	top: 36%;
 	left: 20%;
 	z-index:10;
 }
@@ -305,8 +305,8 @@ html, body {
 .photos5 {
 	position: absolute;
 	display: none;
-	width: 60%;
-	top: 33%;
+	height: 30%;
+	top: 36%;
 	left: 20%;
 	z-index:10;
 }
@@ -410,7 +410,7 @@ html, body {
 	height: 18%;
 	position: absolute;
 	bottom: 4%;
-	left: 46%;
+	left: 45%;
 }
 #erweima_xc{
 	height: 18%;
