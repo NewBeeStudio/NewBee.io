@@ -139,6 +139,20 @@ body {
   margin-top: 200px;
   width: 250px;
 }
+
+
+#page1_1 {
+  position: absolute;
+  margin-left: 16.67%;  /* 1/6 width */
+  min-width: 300px;
+  width: 500px;
+}
+
+#page1_2 {
+  position: absolute;
+  margin-left: 55%;
+  margin-top: -2%;
+}
 #download {
   color: #2e2d33;
   text-decoration: none;
@@ -165,6 +179,21 @@ body {
   font-size: 140%;
   font-family: Arial,KaiTi;
 }
+
+#page2_1 {
+  position: absolute;
+  min-width: 300px;
+  margin-left: 10%;
+  max-width: 25em;   /*Is that a good choice??*/
+}
+
+#page2_2 {
+  position: absolute;
+  min-width: 500px;
+  margin-left: 45%;
+  max-width: 49%;
+}
+
 #page2_11{
   width: 90%;
   margin-top: 20%;
@@ -210,11 +239,31 @@ body {
 .page3 img {
   height: 480px;
 }
+
+#page3_left {
+  position: absolute;
+  margin-left: 5%;
+  min-width: 100px;
+  max-width: 20%;
+}
+
+#page3_main {
+  position: absolute;
+  margin-left: 23%;
+  margin-top: -2%;
+  min-width: 600px;
+  max-width: 800px;
+}
+
+#page3_right {
+  position: absolute;
+  margin-left: 87%;
+  min-width: 100px;
+  max-width: 20%;
+}
+
 #wifi_img{
   margin-top: 8%;
-}
-#wifi_h1{
-  margin-top: 25px;
 }
 #bus{
   display: none;
@@ -226,9 +275,6 @@ body {
 #bus_content{
   opacity: 0;
 }
-#bus_h1{
-  margin-top: 25px;
-}
 #hack{
   display: none;
 }
@@ -239,8 +285,8 @@ body {
 #hack_content{
   opacity: 0;
 }
-#hack_h1{
-  margin-top: 25px;
+#page3_h1 {
+  margin-top: 20px;
 }
 .page3 p {
   font-size: 120%;
@@ -258,6 +304,23 @@ body {
 .page4 p {
   font-size: 130%;
 }
+
+#page4_1 {
+  position: absolute;
+  margin-left: 9%;
+  min-width: 300px;
+  margin-top: 2%; 
+}
+
+#page4_2 {
+  position: absolute;
+  margin-left: 50%;
+  min-width: 300px;
+  margin-top: 2%
+}
+
+
+
 #kaifa, #sheji{
   margin-top: 30%;
   margin-left: 18%;
@@ -315,9 +378,20 @@ body {
   background-color: #a8c72e;
   color: #fefeee;
 }
-#page5_left{
-  text-align: center;
+
+#page5_1 {
+  position: absolute;
+  min-width: 200px;
+  margin-left: 18%;
+  width: 30%;
 }
+
+#page5_2 {
+  position: absolute;
+  min-width: 500px;
+  margin-left: 56%;
+}
+
 #join_us_img{
   width: 50%;
   margin-top: 35%;
@@ -326,12 +400,12 @@ body {
 #try_to_find{
   font-size: 270%;
 }
-#page5_right h1{
+h1{
   margin-top: 20%;
   margin-bottom: 20px;
   font-size: 300%;
 }
-#page5_right p{
+p{
   font-size: 120%;
 }
 #contact_way{
