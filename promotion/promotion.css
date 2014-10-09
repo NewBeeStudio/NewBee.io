@@ -101,7 +101,6 @@ body {
   background: #E2E4E7;
   padding: 0;
   font-family: Arial, Microsoft Yahei;
-  position: relative;
   margin: 0;
   height: 100%;
   -webkit-font-smoothing: antialiased;
@@ -121,95 +120,78 @@ body {
 .page1, .page2, .page3, .page4, .page5{
   margin: 0 auto;
   padding: 0 auto;
-  min-width: 1024px;
-  min-height: 720px;
+  min-width: 1200px;
+  min-height: 640px;
 }
 .page1{
+  text-align: center;
   background-image: url(pic/bgimg.jpg);
   background-size: 100% 100%;
 }
 .page1 h1{
-  margin-top: 210px;
+  margin-top: 50%;
   font-size: 450%;
 }
 .page1 h2{
   font-size: 300%;
 }
-.page1 img{
-  margin-top: 200px;
-  width: 250px;
-}
-
 
 #page1_1 {
-  position: absolute;
-  margin-left: 16.67%;  /* 1/6 width */
-  min-width: 300px;
-  width: 500px;
+  margin-right: 80px;
+  display: inline-block;
 }
 
 #page1_2 {
-  position: absolute;
-  margin-left: 55%;
-  margin-top: -2%;
+  margin-left: 80px;
+  display: inline-block;
 }
-#download {
-  color: #2e2d33;
+
+#page1_2 a {
   text-decoration: none;
-  font-size: 80%;
+  color: #222;
 }
-#download:link {
-  color: #000000;
-}
-#download:visited {
-  color: #0000ff;
-}
-#download:hover {
-  font-size: 150%;
-}
+
 .page2{
   background: url(pic/page2.jpg);
   color: #ecf8f2;
 }
 .page2 h1{
-  font-family: DFKai-SB;
-  font-size: 200%;
+  font-family: KaiTi;
+  font-size: 160%;
+  font-weight: bold;
 }
 .page2 p,li{
-  font-size: 140%;
+  font-size: 130%;
   font-family: Arial,KaiTi;
 }
 
 #page2_1 {
-  position: absolute;
-  min-width: 300px;
+  margin-top: 3%;
+  display: inline-block;
   margin-left: 10%;
-  max-width: 25em;   /*Is that a good choice??*/
+  width: 30%;  
 }
 
 #page2_2 {
-  position: absolute;
-  min-width: 500px;
-  margin-left: 45%;
-  max-width: 49%;
+  margin-top: 3%;
+  display: inline-block;
+  width: 45%;
+  margin-left: 5%; 
 }
 
 #page2_11{
   width: 90%;
-  margin-top: 20%;
 }
 #page2_12{
-  width: 100%;
-  height: 70%;
-  margin-top: 13%;
+  height: 300px;
 }
 #page2_21{
-  width: 90%;
-  margin-top: 22%;
+  width: 95%;
 }
 #page2_22{
-  margin-top: 30px;
+  margin-top: 25%;
   text-align: right;
+  line-height: 1.1;
 }
 #myCarousel{
   border:2px #c2e8fa inset;
@@ -220,46 +202,51 @@ body {
   color: #f8f7df;
   text-align: center;
 }
+
+#page3_left {
+  display: inline-block;
+  width: 6%;
+  margin-left: 5%;
+}
+
+#page3_main {
+  display: inline-block;
+  width: 64%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#page3_right {
+  display: inline-block;
+  width: 6%;
+  margin-right: 5%;
+}
+
 #left_pro{
-  margin-top: 300px;
+  top: -250px;
   font-size: 400%;
   opacity: 0.15;
 }
 #right_pro{
-  margin-top: 300px;
+  top: -250px;
   font-size: 400%;
   opacity: 0.15;
 }
+
 .page3 h1{
-  font-family: Arial,Microsoft Yahei;
+  font-family: Arial, Microsoft Yahei;
+  margin-top: 20px;
+  font-size: 250%;
+  margin-bottom: 10px;
+}
+.page3 p {
+  font-size: 120%;
 }
 .page3 img, .page3 h1, .page3 p{
   position: relative;
 }
 .page3 img {
-  height: 480px;
-}
-
-#page3_left {
-  position: absolute;
-  margin-left: 5%;
-  min-width: 100px;
-  max-width: 20%;
-}
-
-#page3_main {
-  position: absolute;
-  margin-left: 23%;
-  margin-top: -2%;
-  min-width: 600px;
-  max-width: 800px;
-}
-
-#page3_right {
-  position: absolute;
-  margin-left: 87%;
-  min-width: 100px;
-  max-width: 20%;
+  width:80%;
 }
 
 #wifi_img{
@@ -285,7 +272,7 @@ body {
 #hack_content{
   opacity: 0;
 }
-#page3_h1 {
+.page3_h1 {
   margin-top: 20px;
 }
 .page3 p {
@@ -296,40 +283,25 @@ body {
   color: #eaebf3;
 }
 .page4 h1 {
-  padding-bottom: 5px;
   margin-top: 0;
   padding-top: 0;
+  padding-bottom: 5px;
   font-size: 300%;
 }
 .page4 p {
-  font-size: 130%;
+  font-size: 120%;
 }
-
-#page4_1 {
-  position: absolute;
-  margin-left: 9%;
-  min-width: 300px;
-  margin-top: 2%; 
-}
-
-#page4_2 {
-  position: absolute;
-  margin-left: 50%;
-  min-width: 300px;
-  margin-top: 2%
-}
-
-
 
 #kaifa, #sheji{
-  margin-top: 30%;
-  margin-left: 18%;
+  display: inline-block;
+  margin-top: 10%;
+  margin-left: 11%;
 }
 .box {
   border: 5px solid #dedfe6;
   cursor: pointer;
   height: 390px;
-  width: 410px;
+  width: 32%;
   position: relative;
   overflow: hidden;
   -webkit-box-shadow: 1px 1px 1px 1px #ccc;
@@ -380,21 +352,25 @@ body {
 }
 
 #page5_1 {
-  position: absolute;
-  min-width: 200px;
-  margin-left: 18%;
+  display: inline-block;
   width: 30%;
+  margin-left: 10%;
+  text-align: center;
+  position: relative; 
+  top: -210px;
 }
 
 #page5_2 {
-  position: absolute;
-  min-width: 500px;
-  margin-left: 56%;
+  display: inline-block;
+  margin-left: 12%;
+}
+
+#page5_2 a {
+  text-decoration: none;
 }
 
 #join_us_img{
-  width: 50%;
-  margin-top: 35%;
+  width: 45%;
   margin-bottom: 30px;
 }
 #try_to_find{
@@ -403,10 +379,10 @@ body {
 h1{
   margin-top: 20%;
   margin-bottom: 20px;
-  font-size: 300%;
+  font-size: 270%;
 }
 p{
-  font-size: 120%;
+  font-size: 110%;
 }
 #contact_way{
   margin-top: 20px;

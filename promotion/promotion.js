@@ -2,6 +2,7 @@ var screen_width = screen.width;
 var current_pos = 1;
 var left = false;
 var right = false;
+var isClick = false;
 var current = "";
 var next = "";
 var current_angle = 0;
@@ -51,72 +52,78 @@ $(document).ready(function(){
 	});
 
 	$(".page3").click(function(){
-		if(left){
-			switch(current_pos){
-				case 1: 
+		if(!isClick){
+			isClick = true;
+			setTimeout(function(){
+				isClick = false;
+			},900);
+			if(left){
+				switch(current_pos){
+					case 1: 
 					current = "#wifi";
 					next = "#hack";
 					break;
-				case 2:
+					case 2:
 					current = "#bus";
 					next = "#wifi";
 					break;
-				case 3:
+					case 3:
 					current = "#hack";
 					next = "#bus";
 					break;
-				default:
+					default:
 					break;
-			}
-			current_pos -= 1;
-			if(current_pos == 0)current_pos = 3;
+				}
+				current_pos -= 1;
+				if(current_pos == 0)current_pos = 3;
 
-			$(next+"_img").animate({marginLeft: "-=100px"},"fast");
-			$(current+"_img").animate({opacity:"0", marginLeft: "+=100px"},"fast",function(){
-				$(current+"_content").animate({opacity:"0"},"fast",function(){
-					$(current).hide();
-					$(next).show();
-					$(next+"_content").animate({opacity:"1"},"fast",function(){
-						$(next+"_img").animate({opacity:"1", marginLeft: "+=100px"},"fast",function(){
-							$(current+"_img").animate({marginLeft: "-=100px"},"fast");
+				$(next+"_img").animate({marginLeft: "-=100px"},"fast");
+				$(current+"_img").animate({opacity:"0", marginLeft: "+=100px"},"fast",function(){
+					$(current+"_content").animate({opacity:"0"},"fast",function(){
+						$(current).hide();
+						$(next).show();
+						$(next+"_content").animate({opacity:"1"},"fast",function(){
+							$(next+"_img").animate({opacity:"1", marginLeft: "+=100px"},"fast",function(){
+								$(current+"_img").animate({marginLeft: "-=100px"},"fast");
+							});
 						});
 					});
 				});
-			});
-		}
-		else if(right){
-			switch(current_pos){
-				case 1: 
+			}
+			else if(right){
+				switch(current_pos){
+					case 1: 
 					current = "#wifi";
 					next = "#bus";
 					break;
-				case 2:
+					case 2:
 					current = "#bus";
 					next = "#hack";
 					break;
-				case 3:
+					case 3:
 					current = "#hack";
 					next = "#wifi";
 					break;
-				default:
+					default:
 					break;
-			}
-			current_pos += 1;
-			if(current_pos == 4)current_pos = 1;
+				}
+				current_pos += 1;
+				if(current_pos == 4)current_pos = 1;
 
-			$(next+"_img").animate({marginRight: "-=100px"},"fast");
-			$(current+"_img").animate({opacity:"0", marginRight: "+=100px"},"fast",function(){
-				$(current+"_content").animate({opacity:"0"},"fast",function(){
-					$(current).hide();
-					$(next).show();
-					$(next+"_content").animate({opacity:"1"},"fast",function(){
-						$(next+"_img").animate({opacity:"1", marginRight: "+=100px"},"fast",function(){
-							$(current+"_img").animate({marginRight: "-=100px"},"fast");
+				$(next+"_img").animate({marginRight: "-=100px"},"fast");
+				$(current+"_img").animate({opacity:"0", marginRight: "+=100px"},"fast",function(){
+					$(current+"_content").animate({opacity:"0"},"fast",function(){
+						$(current).hide();
+						$(next).show();
+						$(next+"_content").animate({opacity:"1"},"fast",function(){
+							$(next+"_img").animate({opacity:"1", marginRight: "+=100px"},"fast",function(){
+								$(current+"_img").animate({marginRight: "-=100px"},"fast");
+							});
 						});
 					});
 				});
-			});
-		}
+			}
+		}		
 	});
 });
 
