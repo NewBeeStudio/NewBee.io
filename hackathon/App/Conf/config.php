@@ -20,5 +20,9 @@ return array(
 	'MAIL_SMTP'=>'smtp.qq.com', // 邮箱SMTP服务器
 	'MAIL_LOGINNAME'=>'493722771', // 邮箱登录帐号
 	'MAIL_PASSWORD'=>'mxhx931211', // 邮箱密码
+
+	'TMPL_PARSE_STRING'  =>array(
+     '__PUBLIC__' => '/hackathon/Public', // 更改默认的/Public 替换规则
+	)
 );
 ?>
