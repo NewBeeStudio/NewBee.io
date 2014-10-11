@@ -1,0 +1,88 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	min-width: 1024px;
+	min-height: 640px;
+	background-image: url(../img/1.jpg);
+	background-size: 100% 100%;
+}
+
+.nav-bar {
+	background-color: white;
+}
+
+.form {
+	margin: auto 0;
+	background-color: rgba(255,255,255,0.1);
+	text-align: center;
+}
+
+#intro {
+	padding-top: 50px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#intro img {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	width: 60%;
+}
+
+label, span {
+	color: #ddd;
+}
+
+label {
+	vertical-align: middle;
+	margin-right: 12px;
+}
+
+span {
+	margin-left: 30px;
+}
+
+input, input[type=radio] {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+input[type=submit] {
+	display: none;
+	margin-top: 30px;
+	margin-left: 50%;
+	background-color: black;
+	border-color: white;
+	color: white;
+	padding: 10px 23px;
+}
+
+input[type=submit]:hover {
+	border-color: rgb(108,154,230);
+	background-color: black;
+	color: white;
+}
+
+form {
+	padding-top: 5%;
+	padding-bottom: 60px;
+}
+
+footer {
+	margin: 0;
+	padding: 8px;
+	background-color: rgba(100,100,100,0.8);
+	color: #efefef;
+	text-align:center;
+}
+
+footer p {
+	margin: 10px;
+}
+
+

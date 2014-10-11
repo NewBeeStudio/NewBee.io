@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="SJTU, 新蜂工作室, hackathon, 黑客马拉松">
+	<meta name="author" content="Newbee Studio">
+	<meta name="viewpoint" content="width=divice-width,initial-scale=1">
+	<title>SJTU-Hackathon</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bootstrap.min.css">
+	<link href="__PUBLIC__/css/Index_Detail_index.css" rel="stylesheet">
+	<script src="__PUBLIC__/js/jquery.min.js"></script>
+	<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#back_to_top img').click(function(){
+				document.documentElement.scrollTop = document.body.scrollTop = 0;
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<div class="nav-bar">
+		<nav class="navbar bgnav " role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" id="brandcolor" href="{:U('Index/Index/index')}">Hackathon</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav nav-pills ">
+						<li role="presentation"><a href="{:U('Index/Index/index')}" >首页</a></li>
+						<li role="presentation"><a href="{:U('Index/Detail/index')}" >详细介绍</a></li>
+						<li role="presentation"><a href="{:U('Index/Member/index')}" >参赛人员</a></li>
+						<li role="presentation"><a href="{:U('Index/Result/index')}" >作品展示</a></li>
+					</ul>
+					<ul class="nav navbar-nav nav-pills navbar-right">
+						<li	role="presentation"><a href="{:U('Index/Join/index')}">戳我报名</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+	</div>
+
+	<div class="content">
+		<div class="row">
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+			<div class="left col-xs-2 col-sm-2 col-md-2 col-lg-2">
+				<div class='list-group'>
+					<a class='list-group-item' href="#detail1">活动简介</a></li>
+					<a class='list-group-item' href="#detail2">举办宗旨</a></li>
+					<a class='list-group-item' href="#detail3">日程安排</a></li>
+					<a class='list-group-item' href="#detail4">活动规则</a></li>
+					<a class='list-group-item' href="#detail5">活动时间</a></li>
+					<a class='list-group-item' href="#detail6">活动地点</a></li>
+					<a class='list-group-item' href="#detail7">报名方式</a></li>
+				</div>
+			</div>
+			<div class="right col-xs-8 col-sm-8 col-md-8 col-lg-8">
+				<h4 id='detail1'>活动简介</h4><hr style='border: 1px solid rgba(255,0,0,0.2);'>
+				<p>上海交通大学黑客马拉松是由网络信息中心、新蜂工作室和电院学生会共同发起的一个系列活动。Hackathon即编程马拉松（hack&amp;marathon），在国内音译为“黑客马拉松”。在这类活动中，不同领域的人相聚在一起，以合作的形式去创造、设计、编程和实现，并最终完成他们的作品。黑客马拉松的灵魂是持久的合作和创意，让一群人在有限的时间里持续地迸发出他们的创造力和想象力，打造出凝聚他们智慧和汗水的优秀成果。</p>
+				<p>在本次主题活动——创客工作坊（Makers Workshop）中，参与者将以环境监测为主题，以极易上手的开源硬件Arduino为基础，借助于功能齐全的各类传感器，在两天的时间内和伙伴一起成为创客，创造出一款独具特色的环境监测器！</p>
+				
+				<h4 id='detail2'>举办宗旨</h4><hr style='border: 1px solid rgba(255,156,0,0.2);'>
+				<ol>
+					<li>搭建在校学生和初创企业之间的创新交流平台。通过分享会、小型沙龙、企业开放日等多种活动形式帮助在校学生了解初创企业的创业历程、极客技术、运作模式等，帮助初创企业找到合适的在校学生加盟；</li>
+					<li>帮助学生迅速提升技术能力。以工作坊和开放课程等的形式面向全校低年级学生，以实际问题为导向，学习Web技术、开源硬件、云计算、移动互联网、数据分析等等最新技术，强调在实践中学习并且学以致用；</li>
+					<li>宣传网络信息中心的试验环境和创客空间。网络信息中心除了为老师学生提供最基本的网络接入和电子邮件等等IT服务外，还可以提供云计算、大数据、移动互联网和物联网等先进的试验环境和创客空间，以及丰富的数据访问API，为学生的创新应用提供技术支撑，鼓励学生开发各类校园应用；</li>
+					<li>促进国家级重点实验室研究科普。通过与光纤通信国家实验室、未来媒体网络协同创新中心等国家级创新基地合作开展科普活动，让同学们了解和体验最新的网络科技成果；</li>
+					<li>为日后参加各级竞赛活动挖掘新生力量。组织在校学生参加各类国家和社会创新大赛，协助相关企业在学校开展创新应用大赛，发掘优秀学生创业团队。</li>
+				</ol>
+				
+				<h4 id='detail3'>日程安排</h4><hr style='border: 1px solid rgba(201,201,10,0.2);'>
+				<div class="schedule">
+					<h5>创客工作坊第一天(10.25)日程</h5>
+				</div>
+				<table class="table table-striped">
+					<tr><td>08:30-09:00</td><td>参与选手和嘉宾签到时间</td></tr>
+					<tr><td>09:00-10:00</td><td>开场致辞和企业展示</td></tr>
+					<tr><td>10:00-11:00</td><td>Arduino套件技术讲座</td></tr>
+					<tr><td>11:00-12:00</td><td>午餐</td></tr>	
+					<tr><td>12:00-17:30</td><td>作品开发</td></tr>
+					<tr><td>17:30-18:00</td><td>晚餐</td></tr>
+					<tr><td>18:00-22:00</td><td>作品开发</td>	</tr>
+				</table>
+
+				<div class="schedule">
+					<h5>创客工作坊第二天(10.26)日程</h5>
+				</div>
+				<table class="table table-striped">
+					<tr><td>08:30-09:00</td><td>参与选手和嘉宾签到时间</td></tr>
+					<tr><td>09:00-11:30</td><td>作品开发</td></tr>
+					<tr><td>11:30-12:00</td><td>午餐</td></tr>
+					<tr><td>12:00-14:00</td><td>作品开发、准备展示</td></tr>	
+					<tr><td>14:00-16:00</td><td>成果展示</td></tr>
+					<tr><td>16:00-16:30</td><td>评委评选</td></tr>
+					<tr><td>16:30-17:00</td><td>宣布结果、全体合影</td></tr>
+				</table>
+				
+				<h4 id='detail4'>活动规则</h4><hr style='border: 1px solid rgba(0,255,0,0.2);'>
+				<h5>报名参赛</h5>
+				<ol>
+					<li>参与者以个人为单位报名，活动开始后由参与者自行组队或随机分组;</li>
+					<li>每个团队包含2至3人，每人至多参加1个团队；</li>
+					<li>报名费为30元/人，到现场后提交。</li>
+				</ol>
+				<h5>技术指导</h5>
+				<ol>
+					<li>活动开始前举办方将安排一次讲座，涉及Arduino套件的基本使用方法；</li>
+					<li>相关传感器的函数代码已经完成封装，供参与者调用；</li>
+					<li>活动现场将安排多名指导人员（mentors）进行辅导，为参与者的创意开发助力。</li>
+				</ol>
+				<h5>作品提交</h5>
+				<ol>
+					<li>评比答辩阶段，请以组为单位进行成果展示；</li>
+					<li>各组需准备好可运行的成果Demo，以及相应的展示ppt；</li>
+				</ol>
+
+				<h4 id='detail5'>活动时间</h4><hr style='border: 1px solid rgba(0,255,255,0.2);'>
+				<p>2014年10月25日——2014年10月26日</p>
+				
+				<h4 id='detail6'>活动地点</h4><hr style='border: 1px solid rgba(0,0,255,0.2);'>
+				<p>上海市闵行区东川路800号</p>
+				<p>上海交通大学网络信息中心8楼</p>
+
+				<h4 id='detail7'>报名方式</h4><hr style='border: 1px solid rgba(255,0,255,0.2);'>
+				<p>采取线上报名方式，报名截止时间：2014-10-22 23:59</p>
+				<p>注：报名人数满20组时截止报名</p>
+			</div>
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+		</div>
+
+		<div id='back_to_top'>
+			<img src="__PUBLIC__/img/top.png" alt="回到顶部">
+		</div>
+	</div>
+
+	<div class="row">
+		<footer class="footer">
+			<p>SJTU Hackathon 2014</p>
+			<p>© 上海交通大学网络信息中心OmniLab</p>   
+		</footer> 
+	</div> 
+</body>
+
+
+</html>

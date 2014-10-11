@@ -1,0 +1,149 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	min-width: 1024px;
+	min-height: 640px;
+	background-color: #f8f8f8;
+}
+
+/****part of nav begin****/
+.nav a{
+	color:#FFFFFF;
+	text-align:center;
+	border: 2px solid #fff;
+	border-radius: 0;
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:8px;
+	height:35px;
+	background-color: transparent;
+	color: #fff;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+
+}
+
+.navbar-nav li a{
+	padding-top:6px;
+}
+
+.nav li{
+	margin-left:20px;
+	margin-right:12px;
+}
+
+
+.nav-pills li a:hover {
+	background-color: #428bca;
+}
+
+.container-fluid{
+	padding-left:120px;
+	padding-right:40px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+#brandcolor  {
+	color:#FFFFFF;
+}
+
+.nav{
+	height:50px;
+}
+
+
+.navbar {
+	border-radius: 0px;
+}
+
+#brandcolor {
+	margin-left: -105px;
+}
+
+
+.bgnav{
+	background-image:url(../img/1.jpg);
+	background-size:100%;
+	opacity: 0.7;
+	background-image:no-repeat;
+	margin-bottom: 0px;
+}
+
+footer {
+	margin-top: 20px;
+	padding: 8px;
+	min-height:3em;
+	background-color: rgba(10,10,10,0.7);
+	color: #efefef;
+	text-align:center;
+}
+
+footer p {
+	margin: 10px;
+}
+
+.info {
+	margin-top: 50px;
+	text-align: center;
+}
+
+#stats {
+	font-size: 200%;
+	color: #666;
+}
+
+.digit {
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #e13a5a;
+	font-size: 180%;
+}
+
+#call {
+	font-size: 120%;
+	font-family: Microsoft Yahei;
+	color: #2bacae;
+}
+
+hr {
+	margin-bottom: 0;
+	width: 80%;
+	border: 1px solid rgba(137,27,42,0.3);
+}
+
+#members {
+	margin-top: 40px;
+	padding-bottom: 40px;
+}
+
+.person {
+	color: white;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 5px;
+	margin-bottom: 30px;
+	width: 97%;
+	height: 250px;
+	display: inline-block;
+	border: 3px groove rgba(20,20,20,0.1);
+    box-shadow: 3px 3px 8px rgba(20,20,20,0.3);
+    word-wrap: break-word;
+    word-break:break-all;
+}
+.person span {
+	padding-top: 10px;
+	color: white;
+	font-size: 110%;
+}
+
+

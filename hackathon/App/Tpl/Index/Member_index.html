@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="description" content="SJTU, 新蜂工作室, hackathon, 黑客马拉松，报名表">
+	<meta name="author" content="Newbee Studio">
+	<meta name="viewpoint" content="width=divice-width,initial-scale=1">
+	<title>SJTU-Hackathon</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bootstrap.min.css">
+	<link href="__PUBLIC__/css/Index_Member_index.css" rel="stylesheet">
+
+	<script src="__PUBLIC__/js/jquery.min.js"></script>
+	<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="nav-bar">
+		<nav class="navbar bgnav " role="navigation">
+		  <div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" id="brandcolor" href="{:U('Index/Index/index')}">Hackathon</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav nav-pills ">
+				<li role="presentation"><a href="{:U('Index/Index/index')}" >首页</a></li>
+				<li role="presentation"><a href="{:U('Index/Detail/index')}" >详细介绍</a></li>
+				<li role="presentation"><a href="{:U('Index/Member/index')}" >参赛人员</a></li>
+				<li role="presentation"><a href="{:U('Index/Result/index')}" >作品展示</a></li>
+			  </ul>
+			  <ul class="nav navbar-nav nav-pills navbar-right">
+				<li	role="presentation"><a href="{:U('Index/Join/index')}">戳我报名</a></li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+	</div>
+
+	<div class='info'>
+		<p id='stats'>已经有<span class='digit'>{$count}</span>人报名参加</p>
+		<p id='call'>加入到我们中来，体验创意和环保相结合的趣味</p>
+		<hr>
+	</div>
+	<div class='row'>
+		<div class='col-xs-1 col-sm-1 col-md-1 col-lg-1'></div>
+		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" id='members'>
+			<foreach name='member' item='v'>
+				<div class='col-xs-3 col-sm-3 col-md-3 col-lg-3'>
+					<?php
+						$color = array('dc6c7e','db6cdc','6c7edc','6cdcd0','7cdc6c','d8dc6c','dc8c6c');
+						echo "<div class='person' style='background-color:"."#".$color[rand(0,6)].";opacity:0.7'>";  
+					?>
+						<h3>{$v.name} 
+						<?php if($v['sex'] == 1)echo "<img src='__PUBLIC__/img/man.png' width='24px'>";
+					  		else echo "<img src='__PUBLIC__/img/female.png' width='24px'>";
+						?></h3>
+						<span>学院：{$v.college}</span><br>
+						<span>专业：{$v.major}</span><br>
+						<span>邮箱：{$v.e-mail}</span>
+					</div>
+				</div>
+			</foreach> 
+		</div>
+		<div class='col-xs-1 col-sm-1 col-md-1 col-lg-1'></div>
+		
+	</div>
+	
+	<div class="row">
+		<footer class="footer">
+	    	<p>SJTU Hackathon 2014</p>
+	    	<p>© 上海交通大学网络信息中心OmniLab</p>   
+		</footer> 
+	</div> 
+</body>
+
+
+</html>
