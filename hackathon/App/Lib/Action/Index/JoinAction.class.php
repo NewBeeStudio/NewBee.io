@@ -11,7 +11,7 @@ class JoinAction extends Action{
 				$this->assign(array('info'=>'邮箱已被注册'))->display('handle');
 			}
 			else if(M('user')->where(array('lock'=>0))->count() >= 50){
-				$this->assign(array('info'=>'报名人数已满，不再接受报名信息'))->display('handle');	
+				$this->assign(array('info'=>'报名人数已满，不再接受报名信息'))->display('handle');
 			}
 			else{
 				$user = array(
@@ -30,7 +30,7 @@ class JoinAction extends Action{
 				$user['verify'] = $verify;
 				if(M('user')->data($user)->add()){
 				//$this->redirect('Index/Member/index');
-					SendMail(I('e-mail'),'欢迎报名创客工作坊',I('name').'您好！请点击以下链接完成报名：http://localhost/Hackathon_home/index.php/Index/Join/check?verify='.$verify);
+					SendMail(I('e-mail'),'欢迎报名创客工作坊',I('name').'您好！请点击以下链接完成报名：http://newbee.io/hackathon/index.php/Index/Join/check?verify='.$verify);
 					$this->assign(array('info'=>'信息提交成功，请登录邮箱完成报名确认'))->display();
 				}
 				else{
