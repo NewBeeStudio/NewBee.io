@@ -11,7 +11,7 @@ class JoinAction extends Action{
 				$this->assign(array("info"=>"邮箱已被注册"))->display("handle");
 			}
 			else if(M("user")->where(array("lock"=>0))->count() >= 60){
-				$this->assign(array("info"=>"报名人数已满，暂不接受报名。10月20日21时可能有新名额放出，敬请期待！~"))->display("handle");
+				$this->assign(array("info"=>"报名人数已满，暂不接受报名。\n10月20日21时可能有新名额放出，敬请期待！~"))->display("handle");
 			}
 			else{
 				$user = array(
