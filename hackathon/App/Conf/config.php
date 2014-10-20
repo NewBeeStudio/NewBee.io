@@ -3,8 +3,7 @@ return array(
 	'DB_TYPE' => 'mysql',
 	'DB_HOST' => 'localhost',
 	'DB_USER' => 'root',
-	//'DB_PWD' => 'mxhx931211',
-	'DB_PWD' => 'root',
+	'DB_PWD' => 'newbee',
 	'DB_NAME' => 'hackathon',
 	'DB_PREFIX' => 'think_',
 
